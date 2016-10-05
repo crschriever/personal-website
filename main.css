@@ -1,13 +1,23 @@
 body{
 	background-color: lightgray;
 	color:#424242;
-	font-family: Raleway, Arial, Helvetica, sans-serif;
+	font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
 	overflow-x:hidden;
 	width: 100vw;
 }
 
 .text-center {
 	text-align: center;
+}
+
+.img-center {
+	margin: 0 auto;
+	display: block;
+}
+
+.center {
+	display: inline;
+	margin: 0 auto;
 }
 
 .italicized {
@@ -37,7 +47,7 @@ body{
 	background-color: rgba(0,0,0,.95);
 }
 
-.top-container, .about-container, .project-head-container {
+.top-container, .about-container, .project-section-container {
 	padding: 50px 0;
 }
 
@@ -46,6 +56,7 @@ body{
 	background-color: white;
 	position: relative;
 	background: url(res/gt-overview.png) no-repeat center center; 
+	background-position: 0 -112px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -114,6 +125,17 @@ body{
 	font-size: 1.3em;
 }
 
+.about-bottom {
+	margin-top: 50px;
+	margin-bottom:-10px;
+}
+
+.about-mission {
+}
+
+.about-quote {
+}
+
 .img-container {
 	width: 100%;
 	background-color: #252525;
@@ -122,35 +144,54 @@ body{
 }
 
 .img-row-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
+	display: inline;
+	max-height: 10vh;
+	width: auto;
 }
 
-.project-head-container{
+.project-head-container:before{
+	position: absolute;
+	background-color: rgba(0, 0, 0, .8);
+	width: 100%;
+	height:50vh;
+	content:"";
+	z-index: 0;
+}
+
+.project-head-container {
+	background: url(res/klaus.jpg) no-repeat center center; 
+	background-position: 50%;
+	width: 100%;
+	height:50vh;
+}
+
+.project-background {
 	background-color: #f6f6f6;
+}
+
+.project-section-container{
 	padding-bottom: 0;
-}
-
-.project-head-text {
-	color: #1A237E;
-}
-
-.project-nav>ul{
-	display: block;
+	width: 70%;
 	margin: 0 auto;
 }
 
-.project-nav>.nav>li>a{
-	color: blue;
+.project-head-text {
+	color: #f6f6f6;
+	z-index: 5;
+	position: relative;
+	margin:0 auto;
+	font-size: 6.2em;
 }
 
-.project-nav>.nav>li>a:hover, .project-nav>.nav>li>a:focus {
-	background-color: white;
-	color:#424242;
+.project-cont {
 }
 
-.project-container {
-	background-color: white;
-	height: 500px;
+.project {
+	margin-bottom: 50px;
 }
+
+.project-img {
+	width: 80%;
+	height: auto;
+}
+
