@@ -21,7 +21,7 @@ function startupStyling(){
 		for (var i = $slows.length - 1; i >= 0; i--) {
 			var slow = $slows[i];
 			var hOff = slow.offset().top - $(this).scrollTop() - slow.height() / 2;
-			slow.css('background-position-y', 'calc(50% + ' + hOff / 10 + 'px)');
+			slow.css('background-position-y', 'calc(50% + ' + hOff / 5 + 'px)');
 		};
 	});
 
