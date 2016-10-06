@@ -61,10 +61,6 @@ body{
 	position: relative;
 	background: url(res/gt-overview.png) no-repeat center center; 
 	background-position: 0 -112px;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 }
 
 .top-sub-cont {
