@@ -1,6 +1,6 @@
 var $tTextCont, $tCont, $tNavCont, $slows, 
 	$projectHeadT, $projectHeadCont,
-	$mobileDet;
+	$mobileDet, $wrapper;
 
 var mobile = false;
 
@@ -12,6 +12,7 @@ function startupStyling(){
 	$tNavCont = $('.nav-container');
 	$projectHeadCont = $('.project-head-container');
 	$projectHeadT = $('.project-head-text');
+	$wrapper = $('.wrapper');
 
 	$( window ).resize(onResize);
 	onResize();
@@ -45,6 +46,8 @@ function onResize(){
 	}
 
 	$projectHeadT.css('top', $projectHeadCont.height() / 2 - $projectHeadT.height() / 2 + 'px');
+	$wrapper.css('width', $(window).width() + 'px');
+
 }
 
 function scrollSet() {
