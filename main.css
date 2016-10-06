@@ -6,6 +6,10 @@ body{
 	width: 100vw;
 }
 
+.mobile-detection {
+	width: 0px;
+}
+
 .text-center {
 	text-align: center;
 }
@@ -73,7 +77,8 @@ body{
 	height: auto;
 	position:relative;
 	display: block;
-	padding:30px 0;
+	margin:30px 0;
+	border:5px solid #bd3e3e;
 }
 
 .top-text-cont {
@@ -83,7 +88,7 @@ body{
 }
 
 .top-name{
-	font-size: 3.2em;
+	font-size: 3.125em;
 	margin-right: 20px;
 }
 
@@ -92,8 +97,13 @@ body{
 	margin-right: 20px;
 }
 
-.about-container{
+.about-outside {
 	background-color: #f6f6f6;
+}
+
+.about-container{
+	width: 70%;
+	margin: 0 auto;
 }
 
 .about-top-cont {
@@ -109,7 +119,7 @@ body{
 }
 
 .about-sub-cont{
-	width: 70%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -145,7 +155,6 @@ body{
 }
 
 .img-row-img {
-	display: inline;
 	max-height: 5vh;
 	width: auto;
 }
@@ -196,3 +205,111 @@ body{
 	height: auto;
 }
 
+@media screen and (min-width: 1440px) {
+	.top-name {
+		font-size:3.7em;
+	}
+
+	.top-quote {
+		font-size: 1.2em;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.top-name {
+		font-size:2.6em;
+	}
+
+	.top-quote {
+		font-size: 1em;
+	}
+
+	.nav-container>.nav {
+		font-size: .9em;
+		margin-right: 45px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.about-top-cont {
+		padding-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+
+	body {
+		font-size: .9em;
+	}
+
+	h1 {
+		font-size: 3.2em;
+	}
+
+	h2 {
+		font-size: 3em;
+	}
+
+	h3 {
+		font-size: 2.8em;
+	}
+
+	h4 {
+		font-size: 2.6em;
+	}
+
+	.mobile-detection {
+		width: 1px;
+	}
+
+	.top-container{
+		background-position: 0px 0px;
+	}
+
+	.top-image {
+		margin: 15px 0; 
+	}
+
+	.top-text-cont {
+		padding: 15px;
+	}
+
+	.top-name {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 5px;
+		padding: 0;
+	}
+
+	.top-quote {
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+	}
+
+	.nav-container{
+		display: none;
+	}
+
+	.top-container {
+		padding: 20px 0;
+	}
+
+	.about-container {
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 424px) {
+
+	.top-container {
+		padding: 10px 0;
+	}
+
+	.nav-container{
+		display: none;
+	}
+}

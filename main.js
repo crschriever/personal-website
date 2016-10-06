@@ -1,7 +1,12 @@
 var $tTextCont, $tCont, $tNavCont, $slows, 
-	$projectHeadT, $projectHeadCont;
+	$projectHeadT, $projectHeadCont,
+	$mobileDet;
+
+var mobile = false;
 
 function startupStyling(){
+	$mobileDet = $('.mobile-detection');
+
 	$tTextCont = $('.top-text-cont');
 	$tCont = $('.top-container');
 	$tNavCont = $('.nav-container');
@@ -28,8 +33,16 @@ function startupStyling(){
 }
 
 function onResize(){
-	$tTextCont.css('top', $tCont.height() / 2 - $tTextCont.height() / 2 /*- $tNavCont.height()*/ + 'px');
-	$tCont.css('padding-top', 50 + $tNavCont.height() + 'px');
+
+	console.log($mobileDet.width());
+	if($mobileDet.width() > 0){
+		$tCont.removeAttr('style');
+		$tTextCont.removeAttr('style');
+		console.log($mobileDet.width());
+	} else {
+		$tCont.css('padding-top', 50 + $tNavCont.height() + 'px');
+		$tTextCont.css('top', $tCont.height() / 2 - $tTextCont.height() / 2 /*- $tNavCont.height()*/ + 'px');
+	}
 
 	$projectHeadT.css('top', $projectHeadCont.height() / 2 - $projectHeadT.height() / 2 + 'px');
 }
