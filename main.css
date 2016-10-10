@@ -347,6 +347,10 @@ body{
 		width: 90%;
 	}
 
+	.project>h4 {
+		position: relative;
+		font-size: 1.4em;
+	}
 }
 
 @media screen and (max-width: 424px) {
