@@ -107,6 +107,7 @@ body{
 .about-container{
 	width: 70%;
 	margin: 0 auto;
+	padding-bottom: 5px;
 }
 
 .about-top-cont {
@@ -114,7 +115,7 @@ body{
 }
 
 .about-header {
-	color: #1A237E;
+	color: #2c6aa0;
 }
 
 .about-body {
@@ -141,6 +142,14 @@ body{
 .about-bottom {
 	margin-top: 50px;
 	margin-bottom:-10px;
+}
+
+.resume-cont {
+	padding-bottom: 50px;
+}
+
+.resume-button {
+	font-size: 1.4em;
 }
 
 .about-mission {

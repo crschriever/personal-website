@@ -51,10 +51,14 @@ function onResize(){
 }
 
 function scrollSet() {
-	$('a[href$="#scroll"]').on('click', function() {
-		var $scrollLoc = $($(this).data("scroll-to"));
-		var scrollY = $scrollLoc.offset().top - $tNavCont.height() + 1/*- $(window).height() / 2 + $scrollLoc.outerHeight() / 2*/;
-		var body = $("body");
-		body.stop().animate({scrollTop:  scrollY}, '500', 'swing');
-	});
+	$('a[href$="#scroll"]').on('click', function(){scroll(false, this);});
+	$('a[href$="#scrollmiddle"]').on('click', function(){scroll(true, this);});
+}
+
+function scroll(middle, t) {
+	var $scrollLoc = $($(t).data("scroll-to"));
+	var scrollY = $scrollLoc.offset().top - $tNavCont.height() + 1;
+	if(middle) scrollY += -$(window).height() / 2 + $scrollLoc.outerHeight() / 2;
+	var body = $("body");
+	body.stop().animate({scrollTop:  scrollY}, '500', 'swing');
 }
