@@ -63,8 +63,8 @@ body{
 	padding-top: 60px;
 	background-color: white;
 	position: relative;
-	background: url(res/gt-overview.png) no-repeat center center; 
-	background-position: 0 -112px;
+	background: url(res/gt-overview.jpg) no-repeat center center; 
+	background-position: 0 -220px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -184,7 +184,7 @@ body{
 .project-head-container {
 	background: url(res/klaus.jpg) no-repeat center center; 
 	background-position: 50%;
-	background-size: 500%;
+	background-size: 100%;
 	width: 100%;
 	height:50vh;
 }
