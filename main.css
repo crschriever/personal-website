@@ -184,7 +184,7 @@ body{
 .project-head-container {
 	background: url(res/klaus.jpg) no-repeat center center; 
 	background-position: 50%;
-	background-size: 100%;
+	background-size: 150%;
 	width: 100%;
 	height:50vh;
 }
@@ -399,12 +399,12 @@ body{
 	}
 
 	.project-head-container {
-		height: 35vh;
+		height: 30vh;
 		background-size: 200%;
 	}
 
 	.project-head-container:before {
-		height: 35vh;
+		height: 30vh;
 	}
 
 	.project>h4 {
