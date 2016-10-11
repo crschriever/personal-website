@@ -222,10 +222,11 @@ body{
 	font-weight: 700;
 	font-size: 0em;
 	transition: font-size 200ms;
+	left: 0;
 }
 
 .project:hover>h4{
-	font-size: 1.4em;
+	font-size: 1.6em;
 }
 
 .project-img {
@@ -251,6 +252,40 @@ body{
 	content:"";
 }
 
+.contact-container {
+	width: 100%;
+	background-color: #2d2d2b;
+	padding: 50px 0;
+}
+
+.contact-head {
+	color: #f6f6f6;
+}
+
+.contact-button-cont {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5px 0; 
+}
+
+.contact-button-cont {
+	text-align: center;
+}
+
+.contact-button {
+	position: relative;
+}
+
+.contact-a {
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
 @media screen and (min-width: 1440px) {
 	.top-name {
 		font-size:3.7em;
@@ -258,6 +293,10 @@ body{
 
 	.top-quote {
 		font-size: 1.2em;
+	}
+
+	.project:hover>h4 {
+		font-size: 1.95em;
 	}
 }
 
@@ -274,11 +313,23 @@ body{
 		font-size: .9em;
 		margin-right: 45px;
 	}
+
+	.project:hover>h4{
+		font-size: 1.2em;
+	}
 }
 
 @media screen and (max-width: 992px) {
 	.about-top-cont {
 		padding-bottom: 0px;
+	}
+	.project>h4 {
+		position: relative;
+		font-size: 1em;
+	}
+
+	.project:hover>h4 {
+		font-size: 1em;
 	}
 }
 
@@ -347,9 +398,22 @@ body{
 		width: 90%;
 	}
 
+	.project-head-container {
+		height: 35vh;
+		background-size: 200%;
+	}
+
+	.project-head-container:before {
+		height: 35vh;
+	}
+
 	.project>h4 {
 		position: relative;
-		font-size: 1.4em;
+		font-size: 1.5em;
+	}
+
+	.project:hover>h4 {
+		font-size: 1.5em;
 	}
 }
 
@@ -361,5 +425,13 @@ body{
 
 	.nav-container{
 		display: none;
+	}
+
+	.project-head-container {
+		height: 25vh;
+	}
+
+	.project-head-container:before {
+		height: 25vh;
 	}
 }
