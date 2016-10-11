@@ -16,7 +16,7 @@ function startupStyling(){
 
 	$( window ).resize(onResize);
 
-	$('.top-image-cont>img').resize(function(){console.log('res');});
+	$(window).on("load", onResize);
 
 	onResize();
 	scrollSet();
@@ -38,6 +38,7 @@ function startupStyling(){
 
 function onResize(){
 
+	console.log($mobileDet.width());
 	if($mobileDet.width() > 0){
 		$tCont.removeAttr('style');
 		$tTextCont.removeAttr('style');
