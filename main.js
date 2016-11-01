@@ -132,7 +132,7 @@ function startupStyling(){
 					$projectDesc.lessons.html(selectedProject.lessons);
 					$projectDesc.nHeight = $projectDesc.heightFinder.height();
 					console.log(height + ', ' + $projectDesc.nHeight);
-					$projectDesc.css('height', height + 'px');
+					//$projectDesc.css('height', height + 'px');
 				}
 			).delay(100).animate(
 				{left: "0%"/*, height: $projectDesc.nHeight + "px"*/}, 
