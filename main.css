@@ -1,8 +1,19 @@
 body{
 	background-color: lightgray;
 	color:#424242;
-	font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
 	letter-spacing: 1.2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+p, div {
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+.lead {
+	font-weight: 400;
 }
 
 .mobile-detection {
@@ -38,7 +49,7 @@ body{
 	margin-left:0;
 	left:0;
 	width: 100%;
-	z-index: 10;
+	z-index: 15;
 }
 
 .nav-container>.nav {
@@ -55,7 +66,7 @@ body{
 	background-color: rgba(0,0,0,.95);
 }
 
-.top-container, .about-container, .project-section-container {
+.top-container, .about-container, .project-section-container, .top-panel {
 	padding: 50px 0;
 }
 
@@ -176,7 +187,7 @@ body{
 	position: absolute;
 	background-color: rgba(0, 0, 0, .8);
 	width: 100%;
-	height:50vh;
+	height:40vh;
 	content:"";
 	z-index: 0;
 }
@@ -186,7 +197,7 @@ body{
 	background-position: 50%;
 	background-size: 150%;
 	width: 100%;
-	height:50vh;
+	height:40vh;
 }
 
 .project-background {
@@ -213,6 +224,8 @@ body{
 
 .project {
 	padding: 10px;
+	transition: width 200ms;
+	cursor:pointer;
 }
 
 .project>h4{
@@ -223,6 +236,14 @@ body{
 	font-size: 0em;
 	transition: font-size 200ms;
 	left: 0;
+}
+
+.project> a{
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index:10;
 }
 
 .project:hover>h4{
@@ -250,6 +271,30 @@ body{
 .project:hover>.project-img-cont:before {
 	background-color: rgba(255,255,255,.7);
 	content:"";
+}
+
+.project-description {
+	width: 90%;
+	background-color: #2d2d2b;
+	border-right: 15px solid black;
+	padding-top: -50px; 
+	margin-bottom:50px;
+	color:#F6F6F6;
+	position: relative;
+}
+
+.content-container {
+	padding-right: 30px;
+}
+
+.title-h {
+	text-align: right;
+}
+
+.project-desc-img {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
 }
 
 .contact-container {
