@@ -7,7 +7,7 @@ var projectsArray = {
 	ER: {
 		title: "ER Schedule", 
 		description: 
-			"This is a PHP based web app that is still in developement. It will create work schedules for Emergency Rooms, a task that normally takes an employee a full day to do.",
+			"This is a PHP based web app that is still in development. It will create work schedules for Emergency Rooms, a task that normally takes an employee a full day to do.",
 		outcomes: 
 			"From this project I've gained much experience using the OOP side of PHP. I hope to eventually have a working prototype hosted on Digital Ocean within the year.",
 		lessons: 
@@ -52,9 +52,9 @@ var projectsArray = {
 	DSA: {
 		title: "Darlington School App", 
 		description:
-			"This is an app created for my upper school. It displayed to users grades, assignments, announcements, schedules, etc.",
+			"This is an app created for my upper school. It displayed to user's grades, assignments, announcements, schedules, etc.",
 		outcomes:
-			"I took an independent study at my highschool and created this app using PhoneGap and HTML.",
+			"I took an independent study at my high school and created this app using PhoneGap and HTML.",
 		lessons:
 			"I learned how to work with PhoneGap and JQuery. My Javascript, HTML, and CSS skills were also vastly improved."
 	}
