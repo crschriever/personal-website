@@ -2,7 +2,7 @@ var $tTextCont, $tCont, $tNavCont, $slows,
 	$projectHeadT, $projectHeadCont,
 	$mobileDet, $wrapper, $projectDesc, projectMoveable = true;
 
-var projectsArray = {
+/*var projectsArray = {
 
 	ER: {
 		title: "ER Schedule", 
@@ -59,7 +59,7 @@ var projectsArray = {
 			"I learned how to work with PhoneGap and JQuery. My Javascript, HTML, and CSS skills were also vastly improved."
 	}
 
-};
+};*/
 
 var selectedProject = projectsArray.ER;
 console.log(selectedProject);
@@ -75,12 +75,12 @@ function startupStyling(){
 	$projectHeadCont = $('.project-head-container');
 	$projectHeadT = $('.project-head-text');
 	$wrapper = $('.wrapper');
-	$projectDesc = $('.project-description');
+	/*$projectDesc = $('.project-description');
 	$projectDesc.title = $projectDesc.find(".title-h");
 	$projectDesc.description = $projectDesc.find(".description-p");
 	$projectDesc.outcomes = $projectDesc.find(".outcomes-p");
 	$projectDesc.lessons = $projectDesc.find(".lessons-p");
-	$projectDesc.heightFinder = $projectDesc.find(".content");
+	$projectDesc.heightFinder = $projectDesc.find(".content");*/
 
 	$( window ).resize(onResize);
 
@@ -119,7 +119,7 @@ function startupStyling(){
 				selectedProject = projectsArray.DSA;
 			}
 
-			$projectDesc.stop(true, false);
+			/*$projectDesc.stop(true, false);
 			$projectDesc.animate(
 				{left: "-90%"}, 
 				'250', 
@@ -135,13 +135,13 @@ function startupStyling(){
 					//$projectDesc.css('height', height + 'px');
 				}
 			).delay(100).animate(
-				{left: "0%"/*, height: $projectDesc.nHeight + "px"*/}, 
+				{left: "0%"}, 
 				'250', 
 				'swing',
 				function() {
 					projectMoveable = true;
 				}
-			);
+			);*/
 		}
 	});
 
