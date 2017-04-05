@@ -85,7 +85,7 @@ function startupStyling(){
 
 	//Array of scrolling background
 	$slows = [];
-	$('.slow-scroSll').each(function(){
+	$('.slow-scroll').each(function(){
 		$slows.push($(this));
 	});
 
@@ -100,8 +100,6 @@ function startupStyling(){
 
 	//Clicking the project pics
 	$('.project').on('click', function(e){
-
-		console.log("Hi");	
 
 		var id = $(this).attr('id');
 		if(id == "ER") {
