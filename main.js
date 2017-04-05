@@ -15,7 +15,7 @@ var projectsArray = {
 	NEAT: {
 		title: "NEAT", 
 		description: 
-			"NEAT stands for Neuro-Evolution of Augmenting Topologies. It is a machine learning algorithm that creates and evolves neural networks to solve a task.",
+			"<p>NEAT stands for Neuro-Evolution of Augmenting Topologies. It is a machine learning algorithm that creates and evolves neural networks to solve a task.</p>",
 		/*outcomes: 
 			"I created a Java library that implemented the NEAT algorithm. I tested the library in various ways and found that my implementation tended to merely memorize the problem rather than gain a deeper understanding for it (if the task was varied even slightly the neural network would struggle). I plan to revisit the library and improve it in the future.",
 		lessons:
@@ -24,7 +24,8 @@ var projectsArray = {
 	dSA: {
 		title: "deSchApps", 
 		description:
-			"A support website for the iPhone Apps i created. The website has a CMS used for easy addition of new Apps.",
+			"<p>A support website for the iPhone Apps I created. The website has a CMS used for easy addition of new Apps.</p>"
+			+ '<h5 class="bold">Link to the website: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com" target="_blank"></a>deSchApps</div>'
 		/*outcomes:
 			"A website with details on each of the apps I've worked on. I hope to improve the website's mobile version for I created if before I knew BootStrap.",
 		lessons:
