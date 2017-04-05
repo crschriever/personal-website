@@ -15,7 +15,7 @@ var projectsArray = {
 	NEAT: {
 		title: "NEAT", 
 		description: 
-			"<p>NEAT stands for Neuro-Evolution of Augmenting Topologies. It is a machine learning algorithm that creates and evolves neural networks to solve a task.</p>",
+			"<p>NEAT stands for Neuro-Evolution of Augmenting Topologies. It is a machine learning algorithm that creates and evolves neural networks to solve a task. I made my own implementation of this algorithm in Java.</p>",
 		/*outcomes: 
 			"I created a Java library that implemented the NEAT algorithm. I tested the library in various ways and found that my implementation tended to merely memorize the problem rather than gain a deeper understanding for it (if the task was varied even slightly the neural network would struggle). I plan to revisit the library and improve it in the future.",
 		lessons:
