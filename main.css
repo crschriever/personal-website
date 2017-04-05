@@ -17,7 +17,7 @@ p, div {
 }
 
 .mobile-detection {
-	width: 0px;
+	width: 1px;
 }
 
 .wrapper {
@@ -50,6 +50,7 @@ p, div {
 	left:0;
 	width: 100%;
 	z-index: 15;
+	display: none;
 }
 
 .nav-container>.nav {
@@ -64,6 +65,10 @@ p, div {
 
 .nav-container>.nav>li>a:hover {
 	background-color: rgba(0,0,0,.95);
+}
+
+.header-clear {
+	display: block;
 }
 
 .top-container, .about-container, .project-section-container, .top-panel {
@@ -88,11 +93,11 @@ p, div {
 }
 
 .top-image{
+	margin: 15px 0;
 	width: 100%;
 	height: auto;
 	position:relative;
 	display: block;
-	margin:30px 0;
 	border:5px solid #bd3e3e;
 }
 
@@ -100,16 +105,22 @@ p, div {
 	height: 100%;
 	background-color: rgba(0, 0, 0, .7);
 	color: #f6f6f6;
+	padding: 15px;
 }
 
-.top-name{
-	font-size: 3.125em;
-	margin-right: 20px;
+.top-name {
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 0;
 }
 
 .top-quote {
-	padding-bottom: 14px;
-	margin-right: 20px;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
 }
 
 .about-outside {
@@ -384,7 +395,7 @@ p, div {
 	}
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) {
 	.about-top-cont {
 		padding-bottom: 0px;
 	}
@@ -396,9 +407,54 @@ p, div {
 	.project:hover>h4 {
 		font-size: 1em;
 	}
+
+	.nav-container {
+		display: block;
+	}
+
+	.top-image {
+		margin:30px 0;
+	}
+
+	.top-container {
+		padding: 20px 0;
+	}
+
+	.mobile-detection {
+		width: 0px;
+	}
+
+	.header-clear {
+		display: none;
+	}
+
+	.top-name {
+		font-size: 3.125em;
+		margin-right: 20px;
+		width: default;
+		text-align: left;
+		margin: .67em 0;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+
+	.top-quote {
+		padding-bottom: 14px;
+		margin-right: 20px;
+		width:default;
+		text-align: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 0;
+	}
+
+	.top-text-cont {
+		padding: 0;
+	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:767px) {
 
 	body {
 		font-size: .9em;
@@ -452,7 +508,11 @@ p, div {
 	}
 
 	.nav-container{
-		display: none;
+		display: none !important;
+	}
+
+	.header-clear {
+		display: block;
 	}
 
 	.top-container {
