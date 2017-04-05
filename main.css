@@ -105,7 +105,7 @@ p, div {
 	height: 100%;
 	background-color: rgba(0, 0, 0, .7);
 	color: #f6f6f6;
-	padding: 15px;
+	padding: 0px;
 }
 
 .top-name {
@@ -450,7 +450,7 @@ p, div {
 	}
 
 	.top-text-cont {
-		padding: 0;
+		padding: 15px;
 	}
 }
 
@@ -489,7 +489,7 @@ p, div {
 	}
 
 	.top-text-cont {
-		padding: 15px;
+		padding: 0px;
 	}
 
 	.top-name {
