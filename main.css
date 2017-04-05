@@ -362,6 +362,8 @@ p, div {
 	left: 0;
 }
 
+
+
 @media screen and (min-width: 1440px) {
 	.top-name {
 		font-size:3.7em;
@@ -452,6 +454,10 @@ p, div {
 	.top-text-cont {
 		padding: 0;
 		padding: 0px 15px;
+	}
+
+	.modal-title {
+		font-weight: 700;
 	}
 }
 
