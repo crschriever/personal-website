@@ -8,11 +8,8 @@ var projectsArray = {
 	ER: {
 		title: "ER Schedule", 
 		description: 
-			"<p>This is a PHP based web app that is still in development. It will create work schedules for Emergency Rooms, a task that normally takes an employee a full day to do.<p>",
-		/*outcomes: 
-			"From this project I've gained much experience using the OOP side of PHP. I hope to eventually have a working prototype hosted on Digital Ocean within the year.",
-		lessons: 
-			"I've already learned a lot about OOP PHP. I also hope to use this project to learn how to create a server using Digital Ocean."*/
+			'<p>This is a PHP based web app that is still in development. It will create work schedules for Emergency Rooms, a task that normally takes an employee a full day to do.<p>'
+			+ '<p>GitHub repo: <div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/crschriever/ER-Schedule" target="_blank"></a><i class="fa fa-github"> GitHub</i></div></p>'
 	},
 	NEAT: {
 		title: "NEAT", 
@@ -121,9 +118,9 @@ function startupStyling(){
 			selectedProject = projectsArray.DSA;
 		}
 
-		$modal.title.text(selectedProject.title);
+		$modal.title.html(selectedProject.title);
 		console.log($modal.body);
-		$modal.body.text(selectedProject.description);
+		$modal.body.html(selectedProject.description);
 		$modal.modal();
 		
 	});
