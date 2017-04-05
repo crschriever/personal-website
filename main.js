@@ -76,6 +76,10 @@ function startupStyling(){
 	$projectHeadCont = $('.project-head-container');
 	$projectHeadT = $('.project-head-text');
 	$wrapper = $('.wrapper');
+	$modal = $('.modal');
+	$modal.title = $modal.find('.modal-title');
+	$modal.body = $modal.find('.modal-body>p');
+
 
 	$( window ).resize(onResize);
 
@@ -107,7 +111,10 @@ function startupStyling(){
 	});
 
 	//Clicking the project pics
-	$('.project').on('click', function(){	
+	$('.project').on('click', function(e){	
+
+		e.preventDefault();
+
 		var id = $(this).attr('id');
 		if(id == "ER") {
 			selectedProject = projectsArray.ER;
@@ -123,7 +130,10 @@ function startupStyling(){
 			selectedProject = projectsArray.DSA;
 		}
 
-		
+		$modal.title.text(selectedProject.title);
+		console.log($modal.body);
+		$modal.body.text(selectedProject.description);
+		$modal.modal();
 		
 	});
 
