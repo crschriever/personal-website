@@ -142,8 +142,14 @@ function onResize(){
 }
 
 function scrollSet() {
-	$('a[href$="#scroll"]').on('click', function(){scroll(false, this);});
-	$('a[href$="#scrollmiddle"]').on('click', function(){scroll(true, this);});
+	$('a[href$="#scroll"]').on('click', function(e){
+		e.preventDefault();
+		scroll(false, this);
+	});
+	$('a[href$="#scrollmiddle"]').on('click', function(e){
+		e.preventDefault();
+		scroll(true, this);
+	});
 }
 
 function scroll(middle, t) {
