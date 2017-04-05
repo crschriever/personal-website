@@ -8,7 +8,7 @@ var projectsArray = {
 	ER: {
 		title: "ER Schedule", 
 		description: 
-			"This is a PHP based web app that is still in development. It will create work schedules for Emergency Rooms, a task that normally takes an employee a full day to do.",
+			"<p>This is a PHP based web app that is still in development. It will create work schedules for Emergency Rooms, a task that normally takes an employee a full day to do.<p>",
 		/*outcomes: 
 			"From this project I've gained much experience using the OOP side of PHP. I hope to eventually have a working prototype hosted on Digital Ocean within the year.",
 		lessons: 
@@ -83,15 +83,6 @@ function startupStyling(){
 
 	$( window ).resize(onResize);
 
-	//Array of projects
-	$projects = [];
-	$('.project').each(function(){
-		$t = $(this);
-		$projects.push($t);
-		$t.text = $($t.find('p'));
-	});
-
-
 	onResize();
 	scrollSet();
 
@@ -111,9 +102,9 @@ function startupStyling(){
 	});
 
 	//Clicking the project pics
-	$('.project').on('click', function(e){	
+	$('.project').on('click', function(e){
 
-		e.preventDefault();
+		console.log("Hi");	
 
 		var id = $(this).attr('id');
 		if(id == "ER") {
@@ -151,10 +142,6 @@ function onResize(){
 
 	$projectHeadT.css('top', $projectHeadCont.height() / 2 - $projectHeadT.height() / 2 + 'px');
 	$wrapper.css('width', $(window).width() + 'px');
-
-	for (var i = 0; i < $projects.length; i++) {
-		cutOffText($projects[i],  $projects[i].text);
-	};
 }
 
 function scrollSet() {
@@ -168,25 +155,4 @@ function scroll(middle, t) {
 	if(middle) scrollY += -$(window).height() / 2 + $scrollLoc.outerHeight() / 2;
 	var body = $("body");
 	body.stop().animate({scrollTop:  scrollY}, '500', 'swing');
-}
-
-function cutOffText(par, obj) {
-    var wordArray = projectsArray["ER"].description.split(' ');
-    obj.css('overflow', 'scroll');
-    var disp = obj.css('display');
-    obj.css('display', 'block');
-    obj.height(par.height());
-    //Add read more
-    console.log(obj[0].scrollHeight + ", " + par.height());
-    obj.html(wordArray.join(' ') + ' <a href="http://www.google.com">read more</a>');
-    if (obj[0].scrollHeight > par.height()) { //If too long
-    	obj.html(wordArray.join(' ')); //Get rid of read more and shorten
-    	do {
-	        wordArray.pop();
-	        obj.html(wordArray.join(' ') + '... <a href="http://www.google.com">read more</a>');
-	    } while(obj[0].scrollHeight > par.height());
-    }
-
-    obj.css('overflow', 'hidden');
-    obj.css('display', disp);
 }
