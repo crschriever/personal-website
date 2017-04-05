@@ -250,6 +250,22 @@ p, div {
 	font-size: 1.6em;
 }
 
+.project-desc {
+	height: 100%;
+	padding: 20px;
+	position: absolute;
+	z-index: 10;
+	vertical-align: middle;
+	font-size: 1.1em;
+}
+
+.project-desc>p{
+	display: block;
+	font-weight: 700;
+	text-align: center;
+	display: none;
+}
+
 .project-img {
 	width: 100%;
 	height: auto;
@@ -269,8 +285,12 @@ p, div {
 }
 
 .project:hover>.project-img-cont:before {
-	background-color: rgba(255,255,255,.7);
+	background-color: rgba(255,255,255,.9);
 	content:"";
+}
+
+.project:hover>.project-img-cont>.project-desc>p {
+	display:block;
 }
 
 .project-description {
