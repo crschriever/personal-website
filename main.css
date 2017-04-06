@@ -8,6 +8,7 @@ body{
 h1, h2, h3, h4, h5, h6 {
 	font-family: Raleway, Arial, Helvetica, sans-serif;
 }
+
 p, div {
 	font-family: Raleway, Arial, Helvetica, sans-serif;
 }
@@ -98,7 +99,7 @@ p, div {
 	height: auto;
 	position:relative;
 	display: block;
-	border:5px solid #bd3e3e;
+	border:5px solid rgba(0,0,0,.8);
 }
 
 .top-text-cont {

@@ -9,7 +9,7 @@ var projectsArray = {
 		title: "ER Schedule", 
 		description: 
 			'<p>This is a PHP based web app that is still in development. It will create work schedules for Emergency Rooms, a task that normally takes an employee a full day to do.<p>'
-			+ '<h5 class="bold">GitHub repo: </h5><div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/crschriever/ER-Schedule" target="_blank"></a><i class="fa fa-github"> GitHub</i></div>'
+			+ '<h5 class="bold">GitHub repo: </h5><div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/crschriever/ER-Schedule" target="_blank"></a><i class="fa fa-github"></i> GitHub</div>'
 			+ '<h5 class="bold">Live Example: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://www.scheduleir.com" target="_blank"></a> Example</div>'
 	},
 	NEAT: {
