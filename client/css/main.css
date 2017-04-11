@@ -81,7 +81,7 @@ p, div {
 	background-color: white;
 	position: relative;
 	background: url(/res/gt-overview.jpg) no-repeat center center; 
-	background-position: 0 -220px;
+	background-position: 0 0px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -129,13 +129,10 @@ p, div {
 }
 
 .about-container{
-	width: 70%;
+	border-bottom: 1px solid #eeeeee;
 	margin: 0 auto;
-	padding-bottom: 5px;
-}
-
-.about-top-cont {
-	padding-bottom: 50px; 
+	padding: 50px 15%;
+	background-color: #ffffff;
 }
 
 .about-header {
@@ -146,21 +143,38 @@ p, div {
 	font-size: 1.5em;
 }
 
+.about-body>strong {
+	color: #ff9800;
+}
+
 .about-sub-cont{
-	width: 90%;
+	background-color: #fbfbfb;
+	padding: 15px 15% 30px 15%;
 	margin: 0 auto;
+	text-align: left;
 }
 
 .about-sub {
-	padding: 0 20px;
+	padding: 15px 20px;
+	border-bottom:1px solid #eeeeee;
+}
+
+.about-sub:last-child {
+	border:0;
 }
 
 .about-sub-header {
-	color: #bd3e3e;
+	color: #b2003d;
+	font-size:2.5em;
 }
 
 .about-sub-body {
 	font-size: 1.3em;
+}
+
+.about-end {
+	border-top: 1px solid #eeeeee;
+	background-color: white;
 }
 
 .about-bottom {
@@ -174,12 +188,6 @@ p, div {
 
 .resume-button {
 	font-size: 1.4em;
-}
-
-.about-mission {
-}
-
-.about-quote {
 }
 
 .img-container {
@@ -401,9 +409,6 @@ p, div {
 }
 
 @media screen and (min-width: 768px) {
-	.about-top-cont {
-		padding-bottom: 0px;
-	}
 	.project>h4 {
 		position: relative;
 		font-size: 1em;
@@ -457,6 +462,10 @@ p, div {
 	.top-text-cont {
 		padding: 0;
 		padding: 0px 15px;
+	}
+
+	.top-container{
+		background-position: 0px -220px;
 	}
 }
 
@@ -513,6 +522,10 @@ p, div {
 		padding: 0;
 	}
 
+	.about-container {
+		padding:50px 7%;
+	}
+
 	.nav-container{
 		display: none !important;
 	}
@@ -523,10 +536,6 @@ p, div {
 
 	.top-container {
 		padding: 20px 0;
-	}
-
-	.about-container {
-		width: 90%;
 	}
 
 	.project-head-container {
