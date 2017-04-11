@@ -15,7 +15,7 @@ app.route('/')
     });
 
 app.route('*.css', function (req, res) {
-    res.send()
+    res.send();
 });
 
 var server = app.listen(8080, function () {
