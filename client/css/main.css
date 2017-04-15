@@ -149,7 +149,7 @@ p, div {
 
 .about-sub-cont{
 	background-color: #fbfbfb;
-	padding: 15px 15% 30px 15%;
+	padding: 15px 0 30px 0;
 	margin: 0 auto;
 	text-align: left;
 }
@@ -170,6 +170,10 @@ p, div {
 
 .about-sub-body {
 	font-size: 1.3em;
+}
+
+.about-sub > ul {
+	padding: 0 0 0 30px;	
 }
 
 .about-end {
@@ -246,16 +250,6 @@ p, div {
 	padding: 10px;
 	transition: width 200ms;
 	cursor:pointer;
-}
-
-.project>h4{
-	position: absolute;
-	top:50%;
-	width: 100%;
-	font-weight: 700;
-	font-size: 0em;
-	transition: font-size 200ms;
-	left: 0;
 }
 
 .project> a{
@@ -467,6 +461,14 @@ p, div {
 	.top-container{
 		background-position: 0px -220px;
 	}
+
+	.about-sub-cont{
+		padding: 15px 15% 30px 15%;
+	}
+
+	.about-sub > ul {
+		padding: 0 0 0 40px;
+	}
 }
 
 @media screen and (max-width:767px) {
@@ -554,6 +556,10 @@ p, div {
 
 	.project:hover>h4 {
 		font-size: 1.5em;
+	}
+
+	.about-sub-cont {
+		padding: 15px 0;
 	}
 }
 
