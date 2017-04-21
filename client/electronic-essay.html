@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Carl Schriever</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Carl Schriever">
+<meta name="description" content="English Project">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/css/electronic-essay.css">
+<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+</head>
+
+<body>
+    <div class="img-cont">
+        <video class="vid-2" controls="controls" width="500" height="240" name="O, 'Tis William" src="/res/ppc.mov" style="
+            top: 546px;
+            left: 725px;
+            "></video>
+        <video class="vid-2" controls="controls" width="500" height="250" name="O, 'Tis William" src="/res/otis.mov" style="
+            top: 980px;
+            left: 725px;
+            "></video>
+
+        <div class="rotator">
+            <p class="rotating 1">Tried always and Condemned by thee Permit me this reprieve allow - bestow - + That dying may earn the look</p>
+            
+            <p class="rotating 2">Lives he in any other world my faith cannot reply Before it was imperative t was all distinct  to me - All was distinct </p>
+            
+            <p class="rotating 3">gaze For which I cease to live -</p>
+        </div>
+
+        <img src="/res/electronic-essay-img.png" alt="refresh page">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        var order = [];
+        var beg = [];
+        var count = 0;
+        $(function() {
+            $top = $('.1');
+            $mid = $('.2');
+            $bottom = $('.3');
+            order = [$top, $mid, $bottom];
+            beg = [$top, $mid, $bottom];
+
+            moveAbout();
+
+            $('.rotating').css('transition', 'all 2s ease 0s');
+        });
+
+        function moveAbout() {
+
+            if (count % 5 == 0) {
+                order[0] = beg[0];
+                order[1] = beg[1];
+                order[2] = beg[2];
+            }
+
+            if (count % 5 == 1) {
+                order[0] = beg[1];
+                order[1] = beg[0];
+                order[2] = beg[2];
+            }
+
+            if (count % 5 == 2) {
+                order[0] = beg[2];
+                order[1] = beg[1];
+                order[2] = beg[0];
+            }
+
+            if (count % 5 == 3) {
+                order[0] = beg[1];
+                order[1] = beg[2];
+                order[2] = beg[0];
+            }
+
+            if (count % 5 == 4) {
+                order[0] = beg[0];
+                order[1] = beg[2];
+                order[2] = beg[1];
+            }
+
+            count++;
+
+            order[0].css('top', '0px');
+            order[1].css('top', (order[0].height() + 7) + 'px');
+            order[2].css('top', (order[0].height() + order[1].height() + 14) + 'px');
+
+            setTimeout(function() {
+                moveAbout();
+            }, 10000);
+        }
+        
+    </script>
+</body>
+</html>
