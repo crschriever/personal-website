@@ -1,9 +1,7 @@
-var http = require('http');
-var fs = require('fs');
-var url = require('url');
 var path = require('path');
 var express = require('express');
 var app = express();
+var nconf = require('nconf');
 //var morgan = require('morgan');
 
 // use morgan to log requests to the console
@@ -16,7 +14,7 @@ app.use(require('./routes/index'));
 app.use(require('./routes/electronic-essay'));
 app.use(function (req, res, next) {
     res.status(404).send("<p>This page doesn't exist</p><a href=\"/\">return to home</a>");
-})
+});
 
 var server = app.listen(8080, function () {
    var host = server.address().address;
