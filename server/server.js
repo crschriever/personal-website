@@ -1,6 +1,7 @@
 var path = require('path');
 var express = require('express');
 var app = express();
+var helmet = require('helmet');
 var nconf = require('nconf');
 
 // Use config file for nconf
@@ -12,8 +13,7 @@ if (nconf.get("env") === "dev") {
     // use morgan to log requests to the console
     app.use(morgan('dev'));
 } 
-
-
+app.use(helmet());
 
 app.use('/css', express.static(getPath('client/css')));
 app.use('/js', express.static(getPath('client/js')));
