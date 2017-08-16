@@ -3,7 +3,7 @@ import 'bootstrap-sass/assets/javascripts/bootstrap.js';
 import '../css/main.scss';
 
 function requireAll(r) { r.keys().forEach(r); }
-requireAll(require.context('../res/', true, /\.(gif|png|jpe?g)$/i));
+requireAll(require.context('../res/', true, /\.(gif|png|jpe?g|pdf)$/i));
 
 import {projectsArray} from './projects';
 

@@ -62,6 +62,16 @@ module.exports = {
                         }
                     }
                 ]
+            },
+            {
+                test: /\.pdf?/,
+                loader: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'res/'
+                    }
+                }
             }
         ]
     },
