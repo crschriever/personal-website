@@ -15,9 +15,9 @@ if (nconf.get("env") === "dev") {
 } 
 app.use(helmet());
 
-app.use('/css', express.static(getPath('client/css')));
-app.use('/js', express.static(getPath('client/js')));
-app.use('/res', express.static(getPath('client/res')));
+app.use('/css', express.static(getPath('public/dist/css')));
+app.use('/dist', express.static(getPath('public/dist')));
+app.use('/res', express.static(getPath('public/dist/res')));
 app.use(require('./routes/index'));
 app.use(require('./routes/electronic-essay'));
 app.use(function (req, res, next) {
