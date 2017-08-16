@@ -89,12 +89,14 @@ p, div {
 	padding-top: 60px;
 	background-color: white;
 	position: relative;
-	background: no-repeat center center; 
+	background-repeat: no-repeat;
+	background: center center; 
 	background-position: 0 0px;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	z-index: 1;
 }
 
 .top-sub-cont {
