@@ -72,7 +72,6 @@ function startupStyling(){
 		}
 
 		$modal.title.html(selectedProject.title);
-		console.log($modal.body);
 		$modal.body.html(selectedProject.description);
 		$modal.modal();
 		
@@ -85,7 +84,6 @@ function onResize(){
 	mobile = $mobileDet.width() > 0;
 	
 	if(mobile){
-		console.log($tCont.attr('style'));
 		$tCont.attr('style', ($tCont.attr('style') || "").replace(/padding-top:[^;]*;/, ""));		
 		$tTextCont.removeAttr('style');
 	} else {
@@ -137,9 +135,7 @@ function lazyLoad() {
 	let $lazyLoadBackgrounds = $('div.lazy-load').toArray();
 	$lazyLoadBackgrounds.forEach(function(bg) {
 		let $bg = $(bg);
-		console.log(mobile,  $bg.hasClass('small-img'));
 		if (mobile && $bg.hasClass('small-img')) {
-			console.log('Hiiii');
 			$bg.css('background-image', 'url(' + $bg.data('src').split('.').join('-small.') + ')');			
 		} else {
 			$bg.css('background-image', 'url(' + $bg.data('src') + ')');

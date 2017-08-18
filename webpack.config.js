@@ -40,30 +40,6 @@ module.exports = {
                 loader: "file-loader"
             },
             {
-                test: /\.(gif|png|jpe?g)$/i,
-                loaders: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[name].[ext]',
-                            outputPath: 'res/'
-                        }
-                    },
-                    {
-                        loader: 'image-webpack-loader',
-                        query: {
-                            progressive: true,
-                            optimizationLevel: 7,
-                            interlaced: false,
-                            pngquant: {
-                                quality: '65-90',
-                                speed: 4
-                            }
-                        }
-                    }
-                ]
-            },
-            {
                 test: /\.pdf?/,
                 loader: {
                     loader: 'file-loader',
@@ -77,7 +53,6 @@ module.exports = {
     },
     plugins: [
         extractPlugin,
-        new webpack.optimize.UglifyJsPlugin(),
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',

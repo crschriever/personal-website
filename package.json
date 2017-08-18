@@ -11,8 +11,8 @@
   ],
   "scripts": {
     "start": "nodemon --watch server server/server.js",
-    "build": "webpack && node server/server.js",
-    "build:prod": "webpack -p && node server/server.js"
+    "build": "webpack --config=webpack-dev.config.js && node server/server.js",
+    "build:prod": "webpack -p --config=webpack-prod.config.js && node server/server.js"
   },
   "main": "server/server.js",
   "repository": {
