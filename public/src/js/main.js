@@ -20,6 +20,7 @@ var mobile = false;
 
 function startupStyling(){
 	$mobileDet = $('.mobile-detection');
+	mobile = $mobileDet.width() > 0;
 
 	$tTextCont = $('.top-text-cont');
 	$tCont = $('.top-container');
@@ -81,8 +82,11 @@ function startupStyling(){
 
 function onResize(){
 
-	if($mobileDet.width() > 0){
-		$tCont.removeAttr('style');
+	mobile = $mobileDet.width() > 0;
+	
+	if(mobile){
+		console.log($tCont.attr('style'));
+		$tCont.attr('style', ($tCont.attr('style') || "").replace(/padding-top:[^;]*;/, ""));		
 		$tTextCont.removeAttr('style');
 	} else {
 		$tCont.css('padding-top', 50 + $tNavCont.height() + 'px');
@@ -125,7 +129,6 @@ function lazyLoad() {
 		let $image = $(image);
 		$image.attr('src', $image.data('src'));
 		$image.on('load', function() {
-			console.log('yellow');
 			$image.removeAttr('data-src');
 			$image.css('background-color', 'rgba(0,0,0,0)');			
 		});
@@ -134,8 +137,13 @@ function lazyLoad() {
 	let $lazyLoadBackgrounds = $('div.lazy-load').toArray();
 	$lazyLoadBackgrounds.forEach(function(bg) {
 		let $bg = $(bg);
-		$bg.css('background-image', 'url(' + $bg.data('src') + ')');
-		console.log('blue');
+		console.log(mobile,  $bg.hasClass('small-img'));
+		if (mobile && $bg.hasClass('small-img')) {
+			console.log('Hiiii');
+			$bg.css('background-image', 'url(' + $bg.data('src').split('.').join('-small.') + ')');			
+		} else {
+			$bg.css('background-image', 'url(' + $bg.data('src') + ')');
+		}
 		$bg.on('load', function() {
 			$bg.removeAttr('data-src');
 			$bg.css('background-color', 'rgba(0,0,0,0)');
