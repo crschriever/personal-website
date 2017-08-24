@@ -1,0 +1,42 @@
+body{
+	background-color:$off-white;
+	color:#424242;
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+	letter-spacing: 1.2px;
+	overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+p, div {
+	font-family: Raleway, Arial, Helvetica, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+.wrapper {
+	width: 100vw;
+	overflow-x:hidden;
+}
+
+.lead {
+	font-weight: 400;
+}
+
+.mobile-detection {
+	width: 1px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.italicized {
+	font-style: italic;
+}

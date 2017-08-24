@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<% include ./head.ejs %>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="side-bar-container">
+            <div class="side-bar">
+                <h1><%= title %></h1>
+                <ul class="nav nav-stacked">
+                    <% for (var i = 0; i < sideBarItems.length; i++) { let item = sideBarItems[i]; let scroll = item.replace(' ', ''); %>
+                        <li><a href="#scroll" data-scroll-to="#<%= scroll %>"><%= item %></a></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <%- content %>
+        </div>
+        <div class="mobile-detection" style="display:none;"></div>
+    </div>
+
+    <% include ./scripts.ejs %>
+</body>
+
+</html>

@@ -1,6 +1,5 @@
-import 'jquery/dist/jquery.js';
-import 'bootstrap-sass/assets/javascripts/bootstrap.js';
-import '../css/main.scss';
+import {mobile} from './common.js';
+import '../styles/main.scss';
 
 function requireAll(r) { r.keys().forEach(r); }
 requireAll(require.context('../res/', true, /\.(gif|png|jpe?g|pdf)$/i));
@@ -9,19 +8,14 @@ import {projectsArray} from './projects';
 
 let $tTextCont, $tCont, $tNavCont, $slows, $modal, 
 	$projectHeadT, $projectHeadCont,
-	$mobileDet, $wrapper, $projectDesc, projectMoveable = true,
+	$wrapper, $projectDesc, projectMoveable = true,
 	$projects, selectedProject;
 
 
 // var selectedProject = projectsArray.ER;
 // console.log(selectedProject);
 
-var mobile = false;
-
-function startupStyling(){
-	$mobileDet = $('.mobile-detection');
-	mobile = $mobileDet.width() > 0;
-
+function startUpStyling(){
 	$tTextCont = $('.top-text-cont');
 	$tCont = $('.top-container');
 	$tNavCont = $('.nav-container');
@@ -36,7 +30,6 @@ function startupStyling(){
 	$( window ).resize(onResize);
 
 	onResize();
-	scrollSet();
 
 	// Array of scrolling background
 	$slows = [];
@@ -79,9 +72,7 @@ function startupStyling(){
 
 }
 
-function onResize(){
-
-	mobile = $mobileDet.width() > 0;
+function onResize() {
 	
 	if(mobile){
 		$tCont.attr('style', ($tCont.attr('style') || "").replace(/padding-top:[^;]*;/, ""));		
@@ -95,57 +86,5 @@ function onResize(){
 	$wrapper.css('width', $(window).width() + 'px');
 }
 
-// Sets up event listeners for navigation buttons
-function scrollSet() {
-	$('a[href$="#scroll"]').on('click', function(e){
-		e.preventDefault();
-		scroll(false, this);
-	});
-	$('a[href$="#scrollmiddle"]').on('click', function(e){
-		e.preventDefault();
-		scroll(true, this);
-	});
-}
-
-// Scrolls page
-function scroll(middle, t) {
-	var $scrollLoc = $($(t).data("scroll-to"));
-	var scrollY = $scrollLoc.offset().top - $tNavCont.height() + 1;
-	if(middle) scrollY += -$(window).height() / 2 + $scrollLoc.outerHeight() / 2;
-	var body = $("body");
-	body.stop().animate({scrollTop:  scrollY}, '500', 'swing');
-}
-
-// Lazy loading
-function lazyLoad() {
-	// font
-	$('head').append('<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">');
-
-	// images
-	let $lazyLoadImages = $('img.lazy-load').toArray();
-	$lazyLoadImages.forEach(function(image) {
-		let $image = $(image);
-		$image.attr('src', $image.data('src'));
-		$image.on('load', function() {
-			$image.removeAttr('data-src');
-			$image.css('background-color', 'rgba(0,0,0,0)');			
-		});
-	});
-
-	let $lazyLoadBackgrounds = $('div.lazy-load').toArray();
-	$lazyLoadBackgrounds.forEach(function(bg) {
-		let $bg = $(bg);
-		if (mobile && $bg.hasClass('small-img')) {
-			$bg.css('background-image', 'url(' + $bg.data('src').split('.').join('-small.') + ')');			
-		} else {
-			$bg.css('background-image', 'url(' + $bg.data('src') + ')');
-		}
-		$bg.on('load', function() {
-			$bg.removeAttr('data-src');
-			$bg.css('background-color', 'rgba(0,0,0,0)');
-		});
-	});
-}
-
-$(function() {startupStyling();});
-$(window).on("load", function() {startupStyling(); lazyLoad();});
+$(function() {startUpStyling();});
+$(window).on("load", function() {startUpStyling();});

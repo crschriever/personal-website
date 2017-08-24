@@ -1,0 +1,84 @@
+@import '~normalize-scss/sass/_normalize.scss';
+@import './_variables.scss';
+@import './_defaults.scss';
+
+.side-bar-container {
+    position: fixed;
+    width: 20vw;
+    padding: 25px;
+    background: $dark-gray;
+    color: $light-gray;
+    height: 100vh;
+    overflow: auto;
+
+    h1 {
+        font-weight: 800;
+        color:$mid-gray;
+        font-size: 4em;
+    }
+    
+    li {
+        padding: 5px;
+        font-size: 1.25em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            text-decoration: none;
+            color:$light-gray;
+            
+            &:hover {
+                background: 0;
+            }
+            &:focus {
+                background: 0;
+            }
+        }
+    }
+}
+
+.main-content {
+    position: relative;
+    padding: 50px;
+    left: 20vw;
+    width: 79vw;
+
+    h2 {
+        font-size: 3em;
+        font-weight:800;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    .wizard-img {
+        height: 250px;
+        position: absolute;
+        width: auto;
+        z-index: 1;
+    }
+
+    .spacing {
+        height:175px;
+    }
+
+}
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (max-width:767px) {
+
+}
+
+@media screen and (max-width: 424px) {
+
+}
