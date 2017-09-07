@@ -4,7 +4,7 @@ var path = require('path')
 
 router.route('/demos/:page')
     .get(function (req, res, next) {
-        res.render(`./partials/demos/${req.params.page}`, {
+        res.render(`./content/demos/${req.params.page}`, {
             pageTitle: "Carl Schriever",
             pageDescription: "My personal website.",
             pageCss: ['demo'], 

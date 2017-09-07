@@ -11,7 +11,10 @@ function startUp() {
     
     $( window ).resize(onResize);
 
-    scrollSet();
+	scrollSet();
+	
+	// Tooltip init;
+	$('[data-toggle="tooltip"]').tooltip();
 }
 
 function onResize() { 

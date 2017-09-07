@@ -1,6 +1,6 @@
 body{
 	background-color:$off-white;
-	color:#424242;
+	color:$text-gray;
 	font-family: Raleway, Arial, Helvetica, sans-serif;
 	letter-spacing: 1.2px;
 	overflow-x: hidden;
@@ -39,4 +39,16 @@ p, div {
 
 .italicized {
 	font-style: italic;
+}
+
+.underline-link {
+	border-bottom: dashed 1px $mid-gray;
+	text-decoration: none;
+	color: $text-gray;
+
+	&:hover {
+		border-color: $header-blue;
+		text-decoration: none;
+		color: $header-blue;
+	}
 }
