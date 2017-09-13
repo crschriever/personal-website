@@ -50,19 +50,8 @@ function startUpStyling(){
 	$('.project').on('click', function(e){
 
 		var id = $(this).attr('id');
-		if(id == "ER") {
-			selectedProject = projectsArray.ER;
-		} else if(id == "NEAT") {
-			selectedProject = projectsArray.NEAT;
-		} else if(id == "dSA") {
-			selectedProject = projectsArray.dSA;
-		} else if(id == "HH") {
-			selectedProject = projectsArray.HH;
-		} else if(id == "IGW") {
-			selectedProject = projectsArray.IGW;
-		} else if(id == "DS") {
-			selectedProject = projectsArray.DSA;
-		}
+		selectedProject = projectsArray[id];
+		
 
 		$modal.title.html(selectedProject.title);
 		$modal.body.html(selectedProject.description);

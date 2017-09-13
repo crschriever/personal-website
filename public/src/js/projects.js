@@ -1,5 +1,13 @@
 export let projectsArray = {
-
+	GK: {
+		title: "Gate Keeper",
+		description:
+			'<p>Gate Keeper is a project my time made at HackGSU. We wanted to make an easy, secure way for people to grant access to buildings and alleviate having to check in at the front desk everywhere you go.</p>'
+			+ '<p>This solution provides a robust admin side database system to manage access based on asymmetric elliptic curve encryption to authentic access requests. Additionally, we built an intuitive client side app to make it easy to interface with the database side through NFC to easily gain access. Also, we wanted to make sure everything was secure, so we used private keys generated on the users\' devices to sign access requests, which are checked against a server side database of approved credentials. Finally, for added security, we designed the system to be able to work over LAN to allow clients to run the solution on an air-gapped system for extra security.</p>'
+			+ '<h5 class="bold">GitHub server repo: </h5><div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/bentemplin/gatekeeper-server" target="_blank"></a><i class="fa fa-github"></i> GitHub</div>'
+			+ '<h5 class="bold">GitHub client repo: </h5><div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/bentemplin/gatekeeper-app" target="_blank"></a><i class="fa fa-github"></i> GitHub</div>'
+			+ '<h5 class="bold">Read more: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="https://devpost.com/software/gatekeeper-v43jwb" target="_blank"></a> Devpost</div>'
+	},
 	ER: {
 		title: "ER Schedule", 
 		description: 
@@ -34,7 +42,7 @@ export let projectsArray = {
 			'Intergalactic Warfare is an iPhone game that consists of firing missiles at your opponents. These missiles must travel through an obstacle course of planets that all have a gravitational pull that affects the path of the missile. It was written in Objective C.'
 			+ '<h5 class="bold">Link to support page: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com/app/IntergalacticWarfare" target="_blank"></a>Intergalactic Warfare</div>'
 	},
-	DSA: {
+	DS: {
 		title: "Darlington School App", 
 		description:
 			"This is an app created for my upper school. It displayed user's grades, assignments, announcements, schedules, etc. It was written with HTML, CSS, and Javascript.",
