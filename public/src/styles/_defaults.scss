@@ -47,7 +47,7 @@ p, div {
 	color: $text-gray;
 
 	&:hover {
-		border-color: $header-blue;
+		border-bottom: solid 1px $header-blue;
 		text-decoration: none;
 		color: $header-blue;
 	}
