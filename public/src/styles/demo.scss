@@ -46,9 +46,9 @@
 
 .main-content {
     position: relative;
-    padding: 50px;
-    width:90vw;
-    left:5vw;
+    padding: 10px;
+    width:96vw;
+    left:2vw;
 
     h2 {
         font-size: 3em;
@@ -73,6 +73,7 @@
     @media screen and (min-width: 1024px) {
         left: 20vw;
         width: 79vw;
+        padding: 50px;
     }
 
 }
@@ -86,7 +87,10 @@
 }
 
 @media screen and (max-width:767px) {
-
+    .img-inline {
+        width: 100%;
+        max-width: 100%;
+    }
 }
 
 @media screen and (max-width: 424px) {

@@ -12,7 +12,7 @@
             <div class="side-bar">
                 <h1><%= title %></h1>
                 <ul class="nav nav-stacked">
-                    <% for (var i = 0; i < sideBarItems.length; i++) { let item = sideBarItems[i]; let scroll = item.replace(' ', ''); %>
+                    <% for (var i = 0; i < sideBarItems.length; i++) { let item = sideBarItems[i]; let scroll = item.replace(/\s*/g, ''); %>
                         <li><a href="#scroll" data-scroll-to="#<%= scroll %>"><%= item %></a></li>
                     <% } %>
                 </ul>

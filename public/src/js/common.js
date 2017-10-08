@@ -36,10 +36,13 @@ function scrollSet() {
 // Scrolls page
 function scroll(middle, t) {
 	var $scrollLoc = $($(t).data("scroll-to"));
+	console.log($scrollLoc);
 	var scrollY = $scrollLoc.offset().top;
-	if(middle) scrollY += -$(window).height() / 2 + $scrollLoc.outerHeight() / 2;
-	var body = $("body");
-	body.stop().animate({scrollTop:  scrollY}, '500', 'swing');
+	if (middle) {
+		scrollY += -$(window).height() / 2 + $scrollLoc.outerHeight() / 2;
+	}
+	
+	$("html,body").animate({ scrollTop: scrollY }, 500, "swing");
 }
 
 // Lazy loading

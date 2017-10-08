@@ -1,0 +1,28 @@
+<%
+let title = 'Camp Laney';
+let sideBarItems = ['Overview', 'My Camp Experience', 'Giving Back', 'Professional Development'];
+let content = `
+<div id="Overview">
+    <h2>Overview</h2>
+    <p>I went to <a href="https://camplaney.com/" class="underline-link">Camp Laney</a> for four years as a camper, volunteered two years as a W-CIT, and worked two summers on the Ropes Course. Camp Laney was a huge part of my childhood development and taught me many skills I can easily put to use in any industry for any job.</p>
+</div>
+<div id="MyCampExperience">
+    <h2>My Camp Experience</h2>
+    <img class="img-thumbnail img-inline" src="/res/laney-amazing-grace.jpg" alt="Carl Schriever playing amazing grace at chaple">    
+    <p>Going to Laney made me fall in love with the outdoors and introduced me to one of my favorite hobbies, bouldering. I also met some of the people who have had the greatest influence on my life. Listening to the music that the counsellors made when I was a camper inspired me to learn to play guitar, mandolin, and banjo. During the summers I worked there I had the opportunity to play for the camp just like my counsellors played for me.</p>
+</div>
+<div id="GivingBack">
+    <h2>Giving Back</h2>
+    <p>I volunteered two summers for two weeks to work as a W-CIT. These summers I worked in the kitchen, serving food and cleaning up after meals; I worked in the store, handing snacks out to the campers; and I followed the youngest group of campers around from activity to activity to ensure that they didn't get lost.</p>
+</div>
+<div id="ProfessionalDevelopment">
+    <h2>Professional Development</h2>
+    <p>The camp counselor is often considered to be a low-skilled job but I would argue differently. Trying to control thirty middle school aged children from the moment you wake up until you go to sleep and sometimes in the middle of the night teaches many skills.</p>
+    <p>Convincing eight to ten year olds that they should spend the next thirty minutes cleaning during cabin cleanup rather than go outside and running around teaches inventive problem solving and leadership both by example and in delegation of tasks.</p>
+    <p>Waiting for an hour and a half for a kid who is deathily scared of heights to go off the ropes course element teaches patience and dedication to your job.</p>
+    <p>Trying to convince the homesick kid who wakes you up 3 nights in a row that he should stay at camp teaches compassion and understanding for the needs and wants of others.</p>
+</div>
+`
+%>
+
+<%- include('../../partials/demo.ejs', {title, sideBarItems, content}); %>
