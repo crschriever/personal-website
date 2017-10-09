@@ -23,7 +23,7 @@ app.use('/css', express.static(getPath('public/dist/css')));
 app.use('/dist', express.static(getPath('public/dist')));
 app.use('/res', express.static(getPath('public/dist/res')));
 app.use(require('./routes/index'));
-app.use(require('./routes/demos'));
+app.use(require('./routes/info'));
 app.use(require('./routes/electronic-essay'));
 app.use(function (req, res, next) {
     res.status(404).send("<p>This page doesn't exist</p><a href=\"/\">return to home</a>");

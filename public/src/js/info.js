@@ -1,2 +1,2 @@
 import {mobile} from './common.js';
-import '../styles/demo.scss';
+import '../styles/info.scss';
