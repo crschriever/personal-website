@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<% include ./head.ejs %>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="side-bar-container">
+            <div class="side-bar">
+                <ul class="nav nav-stacked">
+                    <a class="info-link home-link" href="/">Home</a>
+                    <h3>Contents</h3>                        
+                    <% for (var i = 0; i < sideBarItems.length; i++) { let item = sideBarItems[i]; let scroll = item.replace(/\s*/g, ''); %>
+                        <li class="info-link"><a href="#scroll" data-scroll-to="#<%= scroll %>"><%= item %></a></li>
+                    <% } %>
+                    <% if (readMore.length > 0) { %>
+                        <h3 class="suggested-reading-head">Read More</h3>
+                        <% for (var i = 0; i < readMore.length; i++) { var more = readMore[i]; %>
+                            <li class="info-link"><a <% include ./readme.ejs %> href="<%= more.href %>"> <%= more.text %> </a></li>
+                        <% } %>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="content-wrapper">
+                <h1><%= title %></h1>
+                <%- content %>
+            </div>
+        </div>
+        <div class="mobile-detection" style="display:none;"></div>
+    </div>
+
+    <% include ./scripts.ejs %>
+</body>
+
+</html>
