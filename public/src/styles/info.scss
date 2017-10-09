@@ -2,56 +2,81 @@
 @import './_variables.scss';
 @import './_defaults.scss';
 
+body {
+    background-color:white;
+}
+
 .side-bar-container {
     position: fixed;
     width: 20vw;
     padding: 25px;
-    background: $dark-gray;
-    color: $light-gray;
+    background-color: $light-gray;
+    color: $mid-gray;
     height: 100vh;
     overflow: auto;
     display: none;
-
-    h1 {
-        font-weight: 800;
-        color:$mid-gray;
-        font-size: 4em;
-    }
     
-    li {
-        padding: 5px;
-        font-size: 1.25em;
+    h3 {
+        font-weight: 900;
+        color: $salmon-header;
+    }
 
-        &:hover {
-            text-decoration: underline;
-        }
-
-        a {
-            text-decoration: none;
-            color:$light-gray;
-            
-            &:hover {
-                background: 0;
-            }
-            &:focus {
-                background: 0;
-            }
-        }
+    .suggested-reading-head {
+        padding-top: 10px;
     }
 
     @media screen and (min-width: 1024px) {
         display:block;
     }
+    
+}
+
+.info-link {
+    padding: 5px;
+    font-size: 1.25em;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    h1 {
+        font-weight: 800;
+        color:$mid-gray;
+        font-size: 5.3em;
+    }
+
+    a {
+        text-decoration: none;
+        color:$mid-gray;
+        
+        &:hover {
+            background: 0;
+        }
+        &:focus {
+            background: 0;
+        }
+    }
+
+}
+
+.home-link {
+    color: $header-blue;
 }
 
 .main-content {
     position: relative;
-    padding: 10px;
     width:96vw;
     left:2vw;
+    background:white;
+    
+    h1 {
+        font-weight: 800;
+        color:$mid-gray;
+        font-size: 3.5em;
+    }
 
     h2 {
-        font-size: 3em;
+        font-size: 2em;
         font-weight:800;
     }
 
@@ -59,9 +84,13 @@
         font-size: 1.5em;
     }
 
+    .content-wrapper {
+        padding: 10px;
+        padding-bottom: 0px;
+    }
+
     .wizard-img {
         height: 250px;
-        position: absolute;
         width: auto;
         z-index: 1;
     }
@@ -73,7 +102,17 @@
     @media screen and (min-width: 1024px) {
         left: 20vw;
         width: 79vw;
-        padding: 50px;
+        .content-wrapper {
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 5.3em;
+        }
+
+        h2 {
+            font-size: 3em;
+        }
     }
 
 }
@@ -90,6 +129,11 @@
     .img-inline {
         width: 100%;
         max-width: 100%;
+    }
+
+    .wizard-img {
+        height: 30%;
+        min-height:100px;
     }
 }
 
