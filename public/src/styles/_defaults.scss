@@ -46,10 +46,36 @@ p, div {
 	text-decoration: none;
 	color: $text-gray;
 
-	&:hover {
+	&:hover, &:focus {
 		border-bottom: solid 1px $header-blue;
 		text-decoration: none;
 		color: $header-blue;
+	}
+}
+
+.suggested-link {
+	color: $light-gray;
+	text-decoration: none;
+
+	&:hover, &:focus {
+		text-decoration: none;
+		color: $light-blue;
+	}
+}
+
+.suggested-list {
+	list-style: none;
+    padding: 0;
+	margin: 0;
+
+	li { 
+		padding-left: 16px; 
+	}
+	
+	a:before {
+		content: ">";
+		padding-right: 2px;
+		font-size: 1.1em;
 	}
 }
 

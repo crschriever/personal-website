@@ -1,11 +1,9 @@
 <%
-let title = 'CS 1331 TA';
+let title = 'Teacher\'s Assistant: CS 1331';
 let sideBarItems = ['Inspiration', 'Student Interaction', 'Projects', 'Outcome'];
 let content = `
-<img class="wizard-img" src="/res/lambda-java-wizard-logo.png" alt="Java lambda wizard">
-<div class="spacing" style="z-index: 2;"></div>
 <div id="Inspiration">
-    <h2>Inspiration</h2>
+    <img class="wizard-img img-inline lazy-load" data-src="/res/lambda-java-wizard-logo.png" alt="Java lambda wizard">
     <p>I have always loved teaching and think that it is the best way to truly ensure that you have mastered a topic. Throughout secondary school I would help my peers learn any topic that they were struggling with because the satisfaction of seeing someone finally understand something is amazing.</p>
     <p>Java was the first language I taught myself and I am incredibly proud to get to share my love for the language with the students of Georgia Tech.</p>
 </div>
@@ -22,7 +20,11 @@ let content = `
     <h2>Outcome</h2>
     <p>Being a TA is an enriching experience that also forces me to master new skills and to retain old ones. I have learned leadership and communication through experience in the classroom. I get to meet people with different outlooks on and styles of programming. Most importantly I influence my peers and assist them in their academic journey through Georgia Tech.</p>
 </div>
-`
+`;
+
+let readMore = [
+    {text: "Counsellor at Camp Laney", href: "/info/CampLaney"}
+];
 %>
 
-<%- include('../../partials/info.ejs', {title, sideBarItems, content}); %>
+<%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>

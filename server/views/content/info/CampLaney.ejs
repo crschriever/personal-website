@@ -3,7 +3,6 @@ let title = 'Camp Laney';
 let sideBarItems = ['Overview', 'My Camp Experience', 'Giving Back', 'Professional Development'];
 let content = `
 <div id="Overview">
-    <h2>Overview</h2>
     <p>I went to <a href="https://camplaney.com/" class="underline-link">Camp Laney</a> for four years as a camper, volunteered two years as a W-CIT, and worked two summers on the Ropes Course. Camp Laney was a huge part of my childhood development and taught me many skills I can easily put to use in any industry for any job.</p>
 </div>
 <div id="MyCampExperience">
@@ -23,7 +22,11 @@ let content = `
     <p>Trying to convince the homesick kid who wakes you up three nights in a row that he should stay at camp teaches compassion and understanding for the needs and wants of others.</p>
     <p>Safely running thirty campers through a high element of the course in forty five minutes or less teaches efficient collaboration, verbal and non-verbal communication, and trust that your teammates perform their job.</p>
 </div>
-`
+`;
+
+let readMore = [
+    {text: "Teacher's Assistant at Georgia Tech", href: "/info/1331-ta"}
+];
 %>
 
-<%- include('../../partials/info.ejs', {title, sideBarItems, content}); %>
+<%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>
