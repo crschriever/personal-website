@@ -12,7 +12,8 @@ export let projectsArray = {
 				<li>API.AI</li>
 			</ul>
 			<br>
-			<div class="btn btn-default contact-button"><a class="contact-a" href="/info/GoogleHomeVisual"></a>Read More</div>
+			<h5 class="bold">GitHub repo: </h5><div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/crschriever/HomeControl" target="_blank"></a><i class="fa fa-github"></i> GitHub</div>
+			<h5 class="bold"></h5> <!-- This is here for spacing --> <div class="btn btn-default contact-button"><a class="contact-a" href="/info/GoogleHomeVisual"></a>Read More</div>
 		`
 	},
 	GK: {
@@ -40,19 +41,19 @@ export let projectsArray = {
 		title: "deSchApps", 
 		description:
 			'<p>A support website for the iPhone Apps I created. The website has a CMS used for easy addition of new Apps. I created an Admin Dashboard that displayed current apps and allowed you to add new apps using php.</p>'
-			+ '<h5 class="bold">Link to the website: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com" target="_blank"></a>deSchApps</div>'
+			// '<h5 class="bold">Link to the website: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com" target="_blank"></a>deSchApps</div>'
 	},
 	HH: {
 		title: "Homework Help", 
 		description:
 			'Homework Help combines scrap paper and a calculator into one app. It provides a means of sorting assignments inside the app. Through this project I learned Xcode and Objective C. I collaborated with a graphic design artist and won a congressional STEM competition.'
-			+ '<h5 class="bold">Link to support page: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com/app/HomeworkHelp" target="_blank"></a>Homework Help</div>'
+			//+ '<h5 class="bold">Link to support page: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com/app/HomeworkHelp" target="_blank"></a>Homework Help</div>'
 	},
 	IGW: {
 		title: "Intergalactic Warfare", 
 		description:
 			'Intergalactic Warfare is an iPhone game that consists of firing missiles at your opponents. These missiles must travel through an obstacle course of planets that all have a gravitational pull that affects the path of the missile. It was written in Objective C.'
-			+ '<h5 class="bold">Link to support page: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com/app/IntergalacticWarfare" target="_blank"></a>Intergalactic Warfare</div>'
+			//+ '<h5 class="bold">Link to support page: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="http://deschapps.com/app/IntergalacticWarfare" target="_blank"></a>Intergalactic Warfare</div>'
 	},
 	DS: {
 		title: "Darlington School App", 
