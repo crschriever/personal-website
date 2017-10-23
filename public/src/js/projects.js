@@ -1,4 +1,13 @@
 export let projectsArray = {
+	CI: {
+		title: "Cicerone",
+		description: `
+			<p>Cicerone is an android app that tells you about any interesting location you happen to pass by, whether you're walking, driving, or flying. The core idea is to let the user explore while the application highlights what is nearby. It will automatically detect nearby interesting locations and tell you about them using text-to-speech even if the app is in the background or your phone is closed. Go into silent mode and receive push notifications instead of voice.</p>
+			<p>Cicerone is built for Android, making use of Java, Google Maps API, and mobile text-to-speech. The app itself makes use of map data and wiki information in order to describe locations in a way the user will understand.</p>
+			<h5 class="bold">GitHub client repo: </h5><div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/crschriever/Cicerone" target="_blank"></a><i class="fa fa-github"></i> GitHub</div>'
+			<h5 class="bold">Read more: </h5><div class="btn btn-default contact-button"><a class="contact-a" href="https://devpost.com/software/cicerone" target="_blank"></a> Devpost</div>
+		`
+	},
 	GH: {
 		title: "Google Home Visual Response",
 		description: `
@@ -9,7 +18,7 @@ export let projectsArray = {
 				<li>Express.js</li>
 				<li>MongoDB</li>
 				<li>Socket.io</li>
-				<li>API.AI</li>
+				<li>API.AI (now dialogflow)</li>
 			</ul>
 			<br>
 			<h5 class="bold">GitHub repo: </h5><div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/crschriever/HomeControl" target="_blank"></a><i class="fa fa-github"></i> GitHub</div>
