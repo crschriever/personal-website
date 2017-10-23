@@ -16,7 +16,7 @@ function startUp() {
 	$menu = $('.mobile-nav');
 	$menuSelect.on('click', function(event) {
 		$menu.animate({"left": "0px"},'fast');
-		$menuSelect.fadeOut('fast');
+		$menuSelect.animate({"opacity": "0"},'fast');
 	});
 	$('.wrapper').on('click', function() {
 		closeMenu();
@@ -65,7 +65,7 @@ function scroll(middle, t) {
 
 function closeMenu() {
 	$menu.animate({"left": "-81vw"},'fast');
-	$menuSelect.fadeIn('fast');
+	$menuSelect.animate({"opacity": "1"},'fast');
 }
 
 // Lazy loading
