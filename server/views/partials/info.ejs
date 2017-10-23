@@ -6,7 +6,23 @@
 </head>
 
 <body>
-
+    <div class="display-tablet menu-button"><i class="fa fa-bars"></i></div>
+    <div class="display-tablet mobile-nav">
+        <div style="height: 20px; position: relative;"><span class="exit-button">x</span></div>
+        <ul class="nav nav-stacked">
+            <a class="info-link home-link" href="/">Home</a>
+            <h3>Contents</h3>                        
+            <% for (var i = 0; i < sideBarItems.length; i++) { let item = sideBarItems[i]; let scroll = item.replace(/\s*/g, ''); %>
+                <li class="info-link"><a href="#scroll" data-scroll-to="#<%= scroll %>"><%= item %></a></li>
+            <% } %>
+            <% if (readMore.length > 0) { %>
+                <h3 class="suggested-reading-head">Read More</h3>
+                <% for (var i = 0; i < readMore.length; i++) { var more = readMore[i]; %>
+                    <li class="info-link"><a <% include ./readme.ejs %> href="<%= more.href %>"> <%= more.text %> </a></li>
+                <% } %>
+            <% } %>
+        </ul>
+    </div>
     <div class="wrapper">
         <div class="side-bar-container">
             <div class="side-bar">
@@ -27,7 +43,6 @@
         </div>
         <div class="main-content">
             <div class="content-wrapper">
-                <a class="info-link home-link display-tablet" href="/">Return Home</a>
                 <h1><%= title %></h1>
                 <%- content %>
             </div>

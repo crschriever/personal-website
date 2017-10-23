@@ -2,12 +2,27 @@ import 'jquery/dist/jquery.js';
 import 'bootstrap-sass/assets/javascripts/bootstrap.js';
 
 let $mobileDet;
+let $menuSelect;
+let $menu;
 export var mobile = false;
 
 //initializes variables whenever the page is loaded
 function startUp() {
     $mobileDet = $('.mobile-detection');
 	mobile = $mobileDet.width() > 0;
+
+	// Set up menu and menu button for mobile
+	$menuSelect = $('.menu-button');
+	$menu = $('.mobile-nav');
+	$menuSelect.on('click', function(event) {
+		$menu.animate({"left": "0px"},'fast');
+	});
+	$('.wrapper').on('click', function() {
+		closeMenu();
+	});
+	$menu.find('.exit-button').on('click', function() {
+		closeMenu();
+	});
     
     $( window ).resize(onResize);
 
@@ -43,6 +58,12 @@ function scroll(middle, t) {
 	}
 	
 	$("html,body").animate({ scrollTop: scrollY }, 500, "swing");
+	// Closes when a button is pressed in menu
+	closeMenu();
+}
+
+function closeMenu() {
+	$menu.animate({"left": "-81vw"},'fast');
 }
 
 // Lazy loading
