@@ -27,8 +27,17 @@
         </div>
         <div class="main-content">
             <div class="content-wrapper">
+                <a class="info-link home-link display-tablet" href="/">Return Home</a>
                 <h1><%= title %></h1>
                 <%- content %>
+            </div>
+            <div class="read-more-mobile display-tablet">
+                    <% if (readMore.length > 0) { %>
+                        <h1>Read More</h1>
+                        <% for (var i = 0; i < readMore.length; i++) { var more = readMore[i]; %>
+                            <li class="info-link"><a <% include ./readme.ejs %> href="<%= more.href %>"> <%= more.text %> </a></li>
+                        <% } %>
+                    <% } %>
             </div>
         </div>
         <div class="mobile-detection" style="display:none;"></div>
