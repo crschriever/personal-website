@@ -1,33 +1,41 @@
 <%
 let title = 'Google Home Visual Response';
-let sideBarItems = ['Overview', 'Supported Queries', 'Demo Video'];
+let sideBarItems = ['Overview', 'Supported Queries', 'Features', 'Demo Video', 'Outcome'];
 let content = `
 <div id="Overview">
-    <p>
-        I wanted to create a way to get visual responses from Google Home Queries. I desired the ease of access to information that a google home provides but the detail that visual data has. I also wanted to teach myself how to make a Node server, how to use MongoDB, and about Web Sockets.
-    </p>
+    <p>I wanted to create a way to get visual responses from Google Home Queries. I desired the ease of access to information that a google home provides but the detail that visual data has. I also wanted to teach myself how to make a Node server, how to use MongoDB, and about Web Sockets.</p>
 </div>
 <div id="SupportedQueries">
     <h2>Supported Queries</h2>
-    <h3>Hey google, what time is it?</h2>
+    <h3>"Hey google, what time is it?"</h2>
     <p>Time queries were the first that I implemented. This was a proof of concept. It pulls up a page that dynamically updates the current time.</p>
-    <h3>Ask Home Commander: do I need to wear a coat?</h2>
+    <h3>"Ask Home Commander: do I need to wear a coat?"</h2>
     <p>Weather queries were the second type that I created. I use open weather map's api to poll the current weather for any city. Making the weather response easily readable on large and small screens was a fun challenge to take on. I also account for timezones in the hourly forecast. This response will update periodically with the most recent information.</p>
-    <h3>Okay Google, Show my agenda / calendar</h3>
+    <h3>"Okay Google, Show my agenda / calendar."</h3>
     <p>These two were pretty easy to make. Google allows you to embed calendars and daily agendas into webpages and so I made this query. Funnily enough: despite how easy they were to make, they're probably one of my most used queries.</p>
-    <h3>Hey Google, show me my to-do lists.</h3>
+    <h3>"Hey Google, show me my to-do lists."</h3>
     <p>This query took the longest to create by far. Any change to to-do list items are dynamically relayed to any other client viewing this response. I used web-sockets to send the messages and JQuery to make changes to the DOM. Using JQuery was a mistake and a giant time sink. The to-do list query is what spurred me towards learning a front end JavaScript framework. I use MongoDB to store the to-do lists and each to-do item.</p>
-    <h3>Tell Home Commander to show my JQuery cheatsheet.</h3>
+    <h3>"Tell Home Commander to show my JQuery cheatsheet."</h3>
     <p>This query is my favorite. It was incredibly easy to make and I use it all the time. Whenever I'm programming, I can just say Hey Google, show me my cheatsheet for anything and it'll pop up on my second monitor. It saves a lot of time and googling.</p>
 </div>
-<!-- <div id="Features"></div> -->
+<div id="Features">
+    <h2>Features</h2>
+    <h3>Dynamic changes across all devices</h3>
+    <p>This was accomplished using web sockets. When the query changes, a message is sent out to each client to change what is being displayed. I use JQuery to manage editing the client's DOM to reflect the result for the new query. When state changes occur on one device (like when a new to-do item is added), the change is sent to any other device viewing the same query via web sockets.</p>
+    <h3>Specifying which device will show a query</h3>
+    <p>You can specify as part of your query which device(s) should show the result. These queries look like: "Okay google, show the weather on my extra monitor." To accomplish this, each new device when first using this web app will be redirected to input the device's name which is stored in a cookie. When device is specified in the query, the message sent to each client will contain that device's name and then each client will decide based on their stored name whether or not to show the results.</p>
+</div>
 <div id="DemoVideo">
     <h2>Demo Video</h2>
     <div class="youtube-video">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/0VP26myo0-Q" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
-<!-- <div id="Outcome"></div> -->
+<div id="Outcome">
+    <h2>Outcome</h2>
+    <p>The primary goal for this project was to learn some new skills and I've definitely done that. I learned how to make a server in Node with Express.js, I learned how to use MongoDB, I learned about using passport.js to handle authentication, I learned about web sockets, and I learned how to use API.AI (now dialogflow) to make Actions on Google Home.</p>
+    <p>I also now have an awesome product that I use everyday.</p>
+</div>
 `;
 
 let readMore = [
