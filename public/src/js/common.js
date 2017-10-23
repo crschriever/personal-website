@@ -14,6 +14,8 @@ function startUp() {
 	// Set up menu and menu button for mobile
 	$menuSelect = $('.menu-button');
 	$menu = $('.mobile-nav');
+	let $menuXDiv = $menu.find('div');
+	$menuXDiv.css("height", $menuXDiv.find(".exit-button").height() + 'px');
 	$menuSelect.on('click', function(event) {
 		$menu.animate({"left": "0px"},'fast');
 		$menuSelect.animate({"opacity": "0"},'fast');
