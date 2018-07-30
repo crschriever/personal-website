@@ -2,29 +2,53 @@
 <html>
 
 <head>
-<% include ./partials/head.ejs %>
+	<% include ./partials/head.ejs %>
 </head>
 
 <body>
-	<div class="display-mobile menu-button"><i class="fa fa-bars"></i></div>
+	<div class="display-mobile menu-button">
+		<i class="fa fa-bars"></i>
+	</div>
 	<div class="display-mobile mobile-nav">
-		<div style="height: 20px; position: relative;"><span class="exit-button">x</span></div>
+		<div style="height: 20px; position: relative;">
+			<span class="exit-button">x</span>
+		</div>
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="#scroll" data-scroll-to=".top-container">Home</a></li>
-			<li><a href="#scroll" data-scroll-to=".about-container">About Me</a></li>
-			<li><a href="#scrollmiddle" data-scroll-to=".resume-cont">Resume</a></li>
-			<li><a href="#scroll" data-scroll-to=".project-head-container">My Projects</a></li>
-			<li><a href="#scroll" data-scroll-to=".contact-container">Contact Me</a></li>
+			<li class="active">
+				<a href="#scroll" data-scroll-to=".top-container">Home</a>
+			</li>
+			<li>
+				<a href="#scroll" data-scroll-to=".about-container">About Me</a>
+			</li>
+			<li>
+				<a href="#scrollmiddle" data-scroll-to=".resume-cont">Resume</a>
+			</li>
+			<li>
+				<a href="#scroll" data-scroll-to=".project-head-container">My Projects</a>
+			</li>
+			<li>
+				<a href="#scroll" data-scroll-to=".contact-container">Contact Me</a>
+			</li>
 		</ul>
 	</div>
 	<div class="wrapper">
 		<div class="row nav-container">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="#scroll" data-scroll-to=".top-container">Home</a></li>
-				<li><a href="#scroll" data-scroll-to=".about-container">About Me</a></li>
-				<li><a href="#scrollmiddle" data-scroll-to=".resume-cont">Resume</a></li>
-				<li><a href="#scroll" data-scroll-to=".project-head-container">My Projects</a></li>
-				<li><a href="#scroll" data-scroll-to=".contact-container">Contact Me</a></li>
+				<li class="active">
+					<a href="#scroll" data-scroll-to=".top-container">Home</a>
+				</li>
+				<li>
+					<a href="#scroll" data-scroll-to=".about-container">About Me</a>
+				</li>
+				<li>
+					<a href="#scrollmiddle" data-scroll-to=".resume-cont">Resume</a>
+				</li>
+				<li>
+					<a href="#scroll" data-scroll-to=".project-head-container">My Projects</a>
+				</li>
+				<li>
+					<a href="#scroll" data-scroll-to=".contact-container">Contact Me</a>
+				</li>
 			</ul>
 		</div>
 		<div data-src="/res/gt-overview.jpg" class="small-img lazy-load row top-container">
@@ -44,47 +68,63 @@
 				<div class="col-xs-12 about-top-cont">
 					<h1 class="about-header text-center">About Me</h1>
 					<p class="about-body text-center lead">
-						My name is Carl Schriever and I am a second-year student at Georgia Tech working on my Bachelors in CS. I am a <strong>full stack</strong> web developer and a <strong>cross-platform</strong> mobile developer. I am focusing on Computer Intelligence and Information Networks. 
+						I am a third-year student at Georgia Tech working on my Bachelors in CS with a focus on Computer Intelligence and Information
+						Networks. I have professional and personal experience as a
+						<strong>full stack</strong> web developer and as a
+						<strong>cross-platform</strong> mobile developer.
 					</p>
 				</div>
 			</div>
 			<div class="row about-sub-cont">
 				<div class="col-xs-12 about-sub">
-					<h2 class="about-sub-header">Interests</h2>
+					<h2 class="about-sub-header">Passion</h2>
 					<p class="about-sub-body">
-						<strong>AI: </strong>I am most passionate about artificial intelligence, especially the creation of Neural Networks. I love watching a network improve and eventually accomplish a task.
+						<strong>AI: </strong> Making behavior trees to create interesting video game enemies, visualizing and finding meaningful trends
+						in data, and following the latest developments in Machine learning.
 					</p>
 					<p class="about-sub-body">
-						<strong>Full Stack Web Development: </strong> I enjoy database management, the ability to serve dynamic webpages, and facilitating communication between devices.
+						<strong>Full Stack: </strong> Creating dynamic web-apps with pages that are responsive, designing scalable architectures, and
+						planning/managing databases.
 					</p>
 				</div>
 				<div class="col-xs-12 about-sub">
 					<h2 class="about-sub-header">Leadership</h2>
 					<ul class="about-sub-body">
-						<li>I am a <a <% include ./partials/readme.ejs %> href="info/1331-ta" class="underline-link">TA for CS 1331</a> at Georgia Tech.</li>
+						<li>I am a
+							<a <% include ./partials/readme.ejs %> href="info/1331-ta" class="underline-link">TA for CS 1331</a> at Georgia Tech.</li>
 						<li>I was lead designer and developer of several apps for the App Store.</li>
 						<li>I am web master for Georgia Tech Trail Blazers, an outdoor service and recreation club.</li>
 						<li>I have competed at many coding events (e.g. Google Games Atlanta, various Hackathons) with different teams.</li>
-						<li>I was a <a <% include ./partials/readme.ejs %> href="info/CampLaney" class="underline-link">counsellor at Camp Laney</a>, a spend the night camp for children.</li>
+						<li>I was a
+							<a <% include ./partials/readme.ejs %> href="info/CampLaney" class="underline-link">counsellor at Camp Laney</a>, a spend the night camp for children.</li>
 					</ul>
 				</div>
 				<div class="col-xs-12 about-sub">
-					<h2 class="about-sub-header">Skills</h2>
+					<h2 class="about-sub-header">Experience</h2>
+					<div class="about-sub-section">
+						<p class="about-sub-body">
+							<strong>Professional: </strong>
+						</p>
+						<p class="about-sub-body">
+							Salesforce - I was a software engineering intern at Salesforce where I got experience working on an Agile team. I programmed
+							in a massive code base, performed code reviews, and QAed.
+						</p>
+					</div>
 					<p class="about-sub-body">
-						<strong>Languages: </strong> Java, JavaScript, HTML/CSS, SASS, PHP, SQL, and Objective C.
+						<strong>Languages: </strong> Java, JavaScript, PHP, python, HTML/CSS, SASS, SQL, and Objective C.
 					</p>
-					<p class="about-sub-body">				
-						<strong>Tools: </strong> Git, Node.js, Webpack, MongoDB, ejs, Bootstrap, JQuery, Xcode, Android Studio, Adobe Photoshop, and JavaFX.
+					<p class="about-sub-body">
+						<strong>Tools: </strong> Git, Node.js, React, Webpack, Grunt, MongoDB, Bootstrap, JQuery, pandas, Xcode, and Android Studio.
 					</p>
 				</div>
 				<div class="col-xs-12 about-sub">
 					<h2 class="about-sub-header">Hobbies</h2>
 					<p class="about-sub-body">
-						<strong>Musical: </strong> I play guitar, mandolin, banjo, and piano. I march trombone in the Georgia Tech Marching Band.
+						<strong>Musical: </strong> I play guitar, mandolin, and march trombone in the Georgia Tech Marching Band.
 					</p>
 					<p class="about-sub-body">
-						<strong>Active: </strong> I play tennis and love rock climbing.
-					</p>				
+						<strong>Active: </strong> I play tennis, ride free-line skates, and boulder.
+					</p>
 				</div>
 			</div>
 			<div class="row about-end">
@@ -115,19 +155,21 @@
 			<div class="project-section-container">
 				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1">
-						<p>Featured Article: <a href="/info/GoogleHomeVisual">Google Home Visual Response</a></p>
+						<p>Featured Article:
+							<a href="/info/GoogleHomeVisual">Google Home Visual Response</a>
+						</p>
 					</div>
 				</div>
 				<div class="row project-cont">
 					<%- include('./partials/template/project.ejs', {id: 'GH', imgSrc: '/res/google-home.jpg', title: 'Google Home Visual Response'}); %>
-					<%- include('./partials/template/project.ejs', {id: 'CI', imgSrc: '/res/Cicerone-icon.jpg', title: 'Cicerone'}); %>					
-					<%- include('./partials/template/project.ejs', {id: 'GK', imgSrc: '/res/GateKeeper.jpg', title: 'Gate Keeper'}); %>
-					<%- include('./partials/template/project.ejs', {id: 'ER', imgSrc: '/res/Schedule.jpg', title: 'ER Schedule'}); %>
-					<%- include('./partials/template/project.ejs', {id: 'NEAT', imgSrc: '/res/NEAT.jpg', title: 'NEAT Algorithm'}); %>
-					<%- include('./partials/template/project.ejs', {id: 'dSA', imgSrc: '/res/DSA.jpg', title: 'deSchApps'}); %>
-					<%- include('./partials/template/project.ejs', {id: 'HH', imgSrc: '/res/HW.jpg', title: 'Homework Help'}); %>
-					<%- include('./partials/template/project.ejs', {id: 'IGW', imgSrc: '/res/IG.jpg', title: 'Intergalactic Warfare'}); %>
-					<%- include('./partials/template/project.ejs', {id: 'DS', imgSrc: '/res/Dar.jpg', title: 'Darlington School App'}); %>
+						<%- include('./partials/template/project.ejs', {id: 'CI', imgSrc: '/res/Cicerone-icon.jpg', title: 'Cicerone'}); %>
+							<%- include('./partials/template/project.ejs', {id: 'GK', imgSrc: '/res/GateKeeper.jpg', title: 'Gate Keeper'}); %>
+								<%- include('./partials/template/project.ejs', {id: 'ER', imgSrc: '/res/Schedule.jpg', title: 'ER Schedule'}); %>
+									<%- include('./partials/template/project.ejs', {id: 'NEAT', imgSrc: '/res/NEAT.jpg', title: 'NEAT Algorithm'}); %>
+										<%- include('./partials/template/project.ejs', {id: 'dSA', imgSrc: '/res/DSA.jpg', title: 'deSchApps'}); %>
+											<%- include('./partials/template/project.ejs', {id: 'HH', imgSrc: '/res/HW.jpg', title: 'Homework Help'}); %>
+												<%- include('./partials/template/project.ejs', {id: 'IGW', imgSrc: '/res/IG.jpg', title: 'Intergalactic Warfare'}); %>
+													<%- include('./partials/template/project.ejs', {id: 'DS', imgSrc: '/res/Dar.jpg', title: 'Darlington School App'}); %>
 				</div>
 			</div>
 			<!-- Modal -->
@@ -151,29 +193,34 @@
 		<div class="contact-container">
 			<h1 class="text-center contact-head">Contact Me</h1>
 			<div class="contact-button-cont">
-				<div class="btn btn-warning contact-button"><a class="contact-a" href="https://github.com/crschriever" target="_blank"></a><i class="fa fa-github"></i> GitHub</div>
+				<div class="btn btn-warning contact-button">
+					<a class="contact-a" href="https://github.com/crschriever" target="_blank"></a>
+					<i class="fa fa-github"></i> GitHub</div>
 			</div>
 			<div class="contact-button-cont">
-				<div class="btn btn-info contact-button"><a class="contact-a" href="https://www.linkedin.com/in/carl-schriever/" target="_blank"></a><i class="fa fa-linkedin"></i> LinkedIn</div>
+				<div class="btn btn-info contact-button">
+					<a class="contact-a" href="https://www.linkedin.com/in/carl-schriever/" target="_blank"></a>
+					<i class="fa fa-linkedin"></i> LinkedIn</div>
 			</div>
 			<div class="contact-button-cont">
-				<div class="btn btn-primary contact-button"><a class="contact-a" href="https://www.facebook.com/carl.schriever" target="_blank"></a><i class="fa fa-facebook"></i> Facebook</div>
+				<div class="btn btn-primary contact-button">
+					<a class="contact-a" href="https://www.facebook.com/carl.schriever" target="_blank"></a>
+					<i class="fa fa-facebook"></i> Facebook</div>
 			</div>
 			<div class="contact-button-cont">
-				<div class="btn btn-danger contact-button"><a class="contact-a" href="mailto:crschriever@gmail.com"></a><i class="fa fa-google"></i> Email Me</div>
+				<div class="btn btn-danger contact-button">
+					<a class="contact-a" href="mailto:crschriever@gmail.com"></a>
+					<i class="fa fa-google"></i> Email Me</div>
 			</div>
 			<h5 class="text-center" style="color:#f6f6f6">crschriever@gmail.com</h4>
 		</div>
 
 		<div class="mobile-detection" style="display:none;"></div>
 	</div>
-</div>
+	</div>
 
-<% include ./partials/scripts.ejs %>
+	<% include ./partials/scripts.ejs %>
 
 </body>
 
 </html>
-
-
-
