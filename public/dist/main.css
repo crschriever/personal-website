@@ -132,6 +132,10 @@ p, div {
   display: inline;
   margin: 0 auto; }
 
+.btn-youtube {
+  background-color: #ed302f;
+  color: white; }
+
 .nav-container {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
@@ -310,7 +314,7 @@ p, div {
   margin: 0 auto; }
 
 .project {
-  padding: 10px;
+  padding: 20px 10px;
   transition: width 200ms;
   cursor: pointer; }
 
@@ -321,8 +325,12 @@ p, div {
   height: 100%;
   z-index: 10; }
 
-.project:hover > h4 {
-  font-size: 1.6em; }
+.project > h3 {
+  font-size: 1.6em;
+  font-weight: 700; }
+
+.project > h4 {
+  font-size: 1.4em; }
 
 .project-desc {
   height: 100%;
@@ -402,14 +410,6 @@ p, div {
 .bold {
   font-weight: 700; }
 
-@media screen and (min-width: 1440px) {
-  .top-name {
-    font-size: 3.7em; }
-  .top-quote {
-    font-size: 1.2em; }
-  .project:hover > h4 {
-    font-size: 1.95em; } }
-
 .lazy-load {
   background-color: gray; }
 
@@ -424,15 +424,22 @@ p, div {
   .nav-container > .nav {
     font-size: 0.9em;
     margin-right: 45px; }
-  .project:hover > h4 {
-    font-size: 1.2em; } }
-
-@media screen and (min-width: 768px) {
+  .featured {
+    font-size: 0.9em; }
+  .project > h3 {
+    position: relative;
+    font-size: 1.1em; }
   .project > h4 {
     position: relative;
-    font-size: 1em; }
-  .project:hover > h4 {
-    font-size: 1em; }
+    font-size: 0.9em; } }
+
+@media screen and (min-width: 768px) {
+  .project > h3 {
+    position: relative;
+    font-size: 0.9em; }
+  .project > h4 {
+    position: relative;
+    font-size: 0.8em; }
   .nav-container {
     display: block; }
   .top-image {
@@ -466,7 +473,9 @@ p, div {
   .about-sub-cont {
     padding: 15px 15% 30px 15%; }
   .about-sub > ul {
-    padding: 0 0 0 40px; } }
+    padding: 0 0 0 40px; }
+  .featured {
+    font-size: 0.9em; } }
 
 @media screen and (max-width: 767px) {
   body {
@@ -509,10 +518,11 @@ p, div {
     background-size: 200%; }
   .project-head-container:before {
     height: 30vh; }
+  .project > h3 {
+    position: relative;
+    font-size: 1.7em; }
   .project > h4 {
     position: relative;
-    font-size: 1.5em; }
-  .project:hover > h4 {
     font-size: 1.5em; }
   .about-sub-cont {
     padding: 15px 0; } }
@@ -526,3 +536,34 @@ p, div {
     height: 25vh; }
   .project-head-container:before {
     height: 25vh; } }
+
+@media screen and (min-width: 1199px) {
+  .top-name {
+    font-size: 2.6em; }
+  .top-quote {
+    font-size: 1em; }
+  .nav-container > .nav {
+    font-size: 0.9em;
+    margin-right: 45px; }
+  .featured {
+    font-size: 0.9em; }
+  .project > h3 {
+    position: relative;
+    font-size: 1.1em; }
+  .project > h4 {
+    position: relative;
+    font-size: 0.9em; } }
+
+@media screen and (min-width: 1440px) {
+  .top-name {
+    font-size: 3.7em; }
+  .top-quote {
+    font-size: 1.2em; }
+  .featured {
+    font-size: 1.3em; }
+  .project > h3 {
+    position: relative;
+    font-size: 1.4em; }
+  .project > h4 {
+    font-size: 1.2em;
+    position: relative; } }

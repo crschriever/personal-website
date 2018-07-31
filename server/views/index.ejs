@@ -114,7 +114,8 @@
 						<strong>Languages: </strong> Java, JavaScript, PHP, python, HTML/CSS, SASS, SQL, and Objective C.
 					</p>
 					<p class="about-sub-body">
-						<strong>Tools: </strong> Git, Node.js, React, Webpack, Grunt, MongoDB, Bootstrap, JQuery, pandas, Xcode, and Android Studio.
+						<strong>Tools: </strong> Git, Node.js, React, Webpack, Grunt, MongoDB, Bootstrap, JQuery, pandas, Selenium WebDriver, Xcode,
+						and Android Studio.
 					</p>
 				</div>
 				<div class="col-xs-12 about-sub">
@@ -155,21 +156,21 @@
 			<div class="project-section-container">
 				<div class="row">
 					<div class="col-xs-10 col-xs-offset-1">
-						<p>Featured Article:
+						<p class="featured">Featured Article:
 							<a href="/info/GoogleHomeVisual">Google Home Visual Response</a>
 						</p>
 					</div>
 				</div>
 				<div class="row project-cont">
-					<%- include('./partials/template/project.ejs', {id: 'GH', imgSrc: '/res/google-home.jpg', title: 'Google Home Visual Response'}); %>
-						<%- include('./partials/template/project.ejs', {id: 'CI', imgSrc: '/res/Cicerone-icon.jpg', title: 'Cicerone'}); %>
-							<%- include('./partials/template/project.ejs', {id: 'GK', imgSrc: '/res/GateKeeper.jpg', title: 'Gate Keeper'}); %>
-								<%- include('./partials/template/project.ejs', {id: 'ER', imgSrc: '/res/Schedule.jpg', title: 'ER Schedule'}); %>
-									<%- include('./partials/template/project.ejs', {id: 'NEAT', imgSrc: '/res/NEAT.jpg', title: 'NEAT Algorithm'}); %>
-										<%- include('./partials/template/project.ejs', {id: 'dSA', imgSrc: '/res/DSA.jpg', title: 'deSchApps'}); %>
-											<%- include('./partials/template/project.ejs', {id: 'HH', imgSrc: '/res/HW.jpg', title: 'Homework Help'}); %>
-												<%- include('./partials/template/project.ejs', {id: 'IGW', imgSrc: '/res/IG.jpg', title: 'Intergalactic Warfare'}); %>
-													<%- include('./partials/template/project.ejs', {id: 'DS', imgSrc: '/res/Dar.jpg', title: 'Darlington School App'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'GH', imgSrc: '/res/google-home.jpg', title: 'Google Home Visual Response', subtitle: 'Web app'}); %>
+						<%- include('./partials/template/project.ejs', {id: 'CI', imgSrc: '/res/Cicerone-icon.jpg', title: 'Cicerone', subtitle: 'Android app'}); %>
+							<%- include('./partials/template/project.ejs', {id: 'GK', imgSrc: '/res/GateKeeper.jpg', title: 'Gate Keeper', subtitle: 'Android app'}); %>
+								<%- include('./partials/template/project.ejs', {id: 'ER', imgSrc: '/res/Schedule.jpg', title: 'ER Schedule', subtitle: 'Web app'}); %>
+									<%- include('./partials/template/project.ejs', {id: 'NEAT', imgSrc: '/res/NEAT.jpg', title: 'NEAT Algorithm', subtitle: 'Java library'}); %>
+										<%- include('./partials/template/project.ejs', {id: 'dSA', imgSrc: '/res/DSA.jpg', title: 'deSchApps', subtitle: 'Web app'}); %>
+											<%- include('./partials/template/project.ejs', {id: 'HH', imgSrc: '/res/HW.jpg', title: 'Homework Help', subtitle: 'iOS app'}); %>
+												<%- include('./partials/template/project.ejs', {id: 'IGW', imgSrc: '/res/IG.jpg', title: 'Intergalactic Warfare', subtitle: 'iOS app'}); %>
+													<%- include('./partials/template/project.ejs', {id: 'DS', imgSrc: '/res/Dar.jpg', title: 'Darlington School App', subtitle: 'PhoneGap app'}); %>
 				</div>
 			</div>
 			<!-- Modal -->
