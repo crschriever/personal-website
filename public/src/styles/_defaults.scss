@@ -1,157 +1,165 @@
-body{
-	background-color:$off-white;
-	color:$text-gray;
-	font-family: Raleway, Arial, Helvetica, sans-serif;
-	letter-spacing: 1.2px;
-	overflow-x: hidden;
+body {
+    background-color: $off-white;
+    color: $text-gray;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    letter-spacing: 1.2px;
+    overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: Raleway, Arial, Helvetica, sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
-p, div {
-	font-family: Raleway, Arial, Helvetica, sans-serif;
+p,
+div {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 * {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 .wrapper {
-	width: 100vw;
-	overflow-x:hidden;
+    width: 100vw;
+    overflow-x: hidden;
 }
 
 .lead {
-	font-weight: 400;
+    font-weight: 400;
 }
 
 .mobile-detection {
-	width: 1px;
+    width: 1px;
 }
 
 .display-mobile {
-	display: block;
+    display: block;
 }
 
 .display-tablet {
-	display: block;
+    display: block;
 }
 
 .menu-button {
-	position: fixed;
-	display: inline;
-	font-size:2.2em;
-	color:$off-white;
-	top:20px;
-	right:20px;
-	z-index: 9;
-	cursor: pointer;
-	text-shadow: -1px 0 $mid-gray, 0 1px $mid-gray, 1px 0 $mid-gray, 0 -1px $mid-gray;
+    position: fixed;
+    display: inline;
+    font-size: 2.2em;
+    color: $off-white;
+    top: 20px;
+    right: 20px;
+    z-index: 9;
+    cursor: pointer;
+    text-shadow: -1px 0 $mid-gray, 0 1px $mid-gray, 1px 0 $mid-gray, 0 -1px $mid-gray;
 }
 
 .mobile-nav {
-	height: 100vh;
-	width: 80vw;
-	z-index: 10;
-	position: fixed;
-	left:-81vw;
-	background-color: $light-gray;
-	padding: 20px;
-	overflow: auto;
+    height: 100vh;
+    width: 80vw;
+    z-index: 10;
+    position: fixed;
+    left: -81vw;
+    background-color: $light-gray;
+    padding: 20px;
+    overflow: auto;
 
-	.exit-button {
-		position: absolute;
-		right: 10px;
-		display: inline-block;
-		cursor: pointer;
-		font-size: 2em;
-	}
+    .exit-button {
+        position: absolute;
+        right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 2em;
+    }
 }
 
 .text-center {
-	text-align: center;
+    text-align: center;
 }
 
 .italicized {
-	font-style: italic;
+    font-style: italic;
 }
 
 .underline-link {
-	border-bottom: dashed 1px $mid-gray;
-	text-decoration: none;
-	color: $text-gray;
+    border-bottom: dashed 1px $mid-gray;
+    text-decoration: none;
+    color: $text-gray;
 
-	&:hover, &:focus {
-		border-bottom: solid 1px $header-blue;
-		text-decoration: none;
-		color: $header-blue;
-	}
+    &:hover,
+    &:focus {
+        border-bottom: solid 1px $header-blue;
+        text-decoration: none;
+        color: $header-blue;
+    }
 }
 
 .suggested-link {
-	color: $light-gray;
-	text-decoration: none;
+    color: $light-gray;
+    text-decoration: none;
 
-	&:hover, &:focus {
-		text-decoration: none;
-		color: $light-blue;
-	}
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $light-blue;
+    }
 }
 
 .suggested-list {
-	list-style: none;
+    list-style: none;
     padding: 0;
-	margin: 0;
+    margin: 0;
 
-	li { 
-		padding-left: 16px; 
-	}
-	
-	a:before {
-		content: ">";
-		padding-right: 2px;
-		font-size: 1.1em;
-	}
+    li {
+        padding-left: 16px;
+    }
+
+    a:before {
+        content: ">";
+        padding-right: 2px;
+        font-size: 1.1em;
+    }
 }
 
 .img-inline {
-	max-width:30%;
-	height:auto;
-	float:right;
-	margin-left:20px;
+    max-width: 30%;
+    height: auto;
+    float: right;
+    margin-left: 20px;
 }
 
 .youtube-video {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-	
-	iframe {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-	}
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-	.mobile-detection {
-		width: 0px;
-	}
+    .mobile-detection {
+        width: 0px;
+    }
 
-	.display-mobile {
-		display: none;
-	}
+    .display-mobile {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-	.display-tablet {
-		display:none;
-	}
+    .display-tablet {
+        display: none;
+    }
 }

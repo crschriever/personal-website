@@ -71,6 +71,7 @@
 }
 
 .top-container {
+    overflow: hidden;
     padding-top: 60px;
     background-color: white;
     position: relative;
@@ -93,12 +94,11 @@
     height: auto;
     position: relative;
     display: block;
-    border: 5px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
 }
 
 .top-text-cont {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
     color: $light-gray;
     padding: 15px;
 }
@@ -109,6 +109,7 @@
     margin: 0;
     margin-bottom: 5px;
     padding: 0;
+    font-weight: 1000;
 }
 
 .top-quote {
@@ -185,7 +186,7 @@
 }
 
 .resume-cont {
-    padding-bottom: 50px;
+    padding: 50px;
 }
 
 .resume-button {
@@ -368,6 +369,18 @@
 
 .lazy-load[data-src] {
     background-color: rgba(0, 0, 0, 0);
+}
+
+.top-background {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-size: 100%;
+    filter: blur(8px) brightness(0.7);
+    margin: -8px -16px;
 }
 
 @media screen and (max-width: 1199px) {
