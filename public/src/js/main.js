@@ -55,8 +55,10 @@ function startUpStyling() {
     });
 
     // Clicking the project pics
-    $(".project").on("click", function(e) {
-        var id = $(this).attr("id");
+    $(".project-img-cont").on("click", function(e) {
+        var id = $(this)
+            .closest(".project")
+            .attr("id");
         selectedProject = projectsArray[id];
 
         $modal.title.html(selectedProject.title);

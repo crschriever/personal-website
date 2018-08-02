@@ -322,8 +322,7 @@ div {
 
 .project {
   padding: 20px 10px;
-  transition: width 200ms;
-  cursor: pointer; }
+  transition: width 200ms; }
 
 .project > a {
   display: block;
@@ -359,7 +358,8 @@ div {
   border-radius: 15px; }
 
 .project-img-cont {
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
 
 .project-img-cont:before {
   position: absolute;
