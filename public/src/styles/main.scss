@@ -15,6 +15,10 @@
     text-decoration: underline;
 }
 
+.bold {
+    font-weight: 1000;
+}
+
 .img-center {
     margin: 0 auto;
     display: block;
@@ -241,8 +245,9 @@
 }
 
 .project-cont {
-    width: 98%;
+    width: 90%;
     margin: 0 auto;
+    padding-bottom: 30px;
 }
 
 .project {

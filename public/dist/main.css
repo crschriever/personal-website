@@ -130,6 +130,9 @@ div {
 .underline {
   text-decoration: underline; }
 
+.bold {
+  font-weight: 1000; }
+
 .img-center {
   margin: 0 auto;
   display: block; }
@@ -317,8 +320,9 @@ div {
   font-size: 6.2em; }
 
 .project-cont {
-  width: 98%;
-  margin: 0 auto; }
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 30px; }
 
 .project {
   padding: 20px 10px;
