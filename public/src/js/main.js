@@ -75,7 +75,7 @@ function onResize() {
         $tCont.css("padding-top", 50 + $tNavCont.height() + "px");
         $tTextCont.css(
             "top",
-            $tCont.height() / 2 - $tTextCont.height() / 2 - $tNavCont.height() + "px"
+            $tCont.height() / 2 - $tTextCont.height() / 2 /*- $tNavCont.height()*/ + "px"
         );
     }
 
