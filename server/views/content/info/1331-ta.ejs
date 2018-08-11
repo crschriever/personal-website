@@ -3,18 +3,20 @@ let title = 'Teacher\'s Assistant: CS 1331';
 let sideBarItems = ['Inspiration', 'Student Interaction', 'Projects', 'Outcome'];
 let content = `
 <div id="Inspiration">
+    <h2>Inspiration</h2>
     <img class="wizard-img img-inline lazy-load" data-src="/res/lambda-java-wizard-logo.png" alt="Java lambda wizard">
-    <p>I have always loved teaching and think that it is the best way to truly ensure that you have mastered a topic. Throughout secondary school I would help my peers learn any topic that they were struggling with because the satisfaction of seeing someone finally understand something is amazing.</p>
-    <p>Java was the first language I taught myself and I am incredibly proud to get to share my love for the language with the students of Georgia Tech.</p>
+    <p>I have always loved teaching and think that it is the best way to truly ensure that you have mastered a topic. The satisfaction of seeing that "light bulb" moment happen for someone who had been struggling is second to none.</p>
+    <p>Java was the first language I taught myself and I am incredibly proud that I can share my love for the language and programming in general with the students of Georgia Tech.</p>
 </div>
 <div id="StudentInteraction">
     <h2>Student Interaction</h2>
-    <p>I teach recitation once a week for an hour and a half. During recitation we quickly review the previous week's topics answering any question that students might have. I get the opportunity to share my passion for CS with the class and the chance to see my students' passion grow as they master the course material.</p>
+    <p>I teach recitation once a week for an hour and a half. During recitation we quickly review the previous week's topics answering any students' questions. Occasionally I will be asked to teach lecture when the professor is sick or can't make it for any other reason.</p>
     <p>I hold office hours 3 times a week during which students can come for help with their assignments. Its entertaining to see some of the more round about solutions that students come up with and to see my personal coding style incorporated into theirs.</p>
 </div>
 <div id="Projects">
     <h2>Projects</h2>
-    <p>Part of my job is making and grading homework/tests. This keeps Java syntax fresh in my mind and forces me to remember libraries like javaFX. It also makes me much better at debugging as I make corrections on students' submissions.</p>
+    <p>Part of my job is making and grading homework/tests. This keeps Java syntax fresh in my mind and forces me to remember libraries like javaFX. It also makes me much better at debugging as I find corrections on students' submissions.</p>
+    <p>I have also gone beyond the normal responsibilities of a TA and made a learning tool for students called Nova. It is hosted on a Georgia Tech server and provides additional practive for students. You can ready more about it <a href="/info/Nova">here</a>.</p>
 </div>
 <div id="Outcome">
     <h2>Outcome</h2>
@@ -23,9 +25,9 @@ let content = `
 `;
 
 let readMore = [
-    {text: "Counsellor at Camp Laney", href: "/info/CampLaney"},
-    {text: "Google Home Personal Project", href: "/info/GoogleHomeVisual"}
+    {text: "Nova: Java Learning Tool for students", href: "/info/Nova"},
+    {text: "Counsellor at Camp Laney", href: "/info/CampLaney"}
 ];
 %>
 
-<%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>
+    <%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>

@@ -1,0 +1,16 @@
+<%
+let title = 'Nova';
+let sideBarItems = [];
+let content = `
+<div id="Inspiration">
+    <h2>Inspiration</h2>
+    <p>Help people learn Java
+`;
+
+let readMore = [
+    {text: "Teacher's Assistant at Georgia Tech", href: "/info/1331-ta"},
+    {text: "Google Home Personal Project", href: "/info/GoogleHomeVisual"}
+];
+%>
+
+    <%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>
