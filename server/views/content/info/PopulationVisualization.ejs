@@ -1,10 +1,63 @@
 <%
 let title = 'Population Visualization Tool';
-let sideBarItems = [];
+let sideBarItems = ['Project Goals', 'Data Cleaning', 'Database Design'];
 let content = `
-<div id="Inspiration">
-    <h2>Inspiration</h2>
-    <p>Help people learn Java</p>
+<img class="slider-img lazy-load" data-src="/res/population-slider.gif" alt="Population visualization slider in action">
+<div id="ProjectGoals">
+    <h2>Project Goals</h2>
+    <ol>
+        <li>Track population growth over time by acquiring migration data and general population data.</li>
+        <li>Convert that data to usable format.</li>
+        <li>Create a choropleth map to visualize the data at state and county levels.</li>
+        <li>Provide access to actual data for each demographic for each county or state with a sidebar.</li>
+        <li>Create a slider that allows users to walk through each time slice.</li>
+        <li>Include filters that allow users to filter by various demographics.</li>
+        <img class="filter-img lazy-load" data-src="/res/population-moved-states.png" alt="Shows the amount of population that moved states">
+    </ol>
+</div>
+<div id="DataCleaning">
+    <h2>Data Cleaning</h2>
+    <p>
+        We got our data from American Fact Finder as a giant csv file. The csv had missing data, nonsensical headers, and headers that weren't consistent from year to year. We created a data cleaner using node.js to read in the csv files and populate a MongoDB instance.</p> 
+    <p>
+        Cleaning the data turned out to be one of the biggest challenges because of the scheme that American Fact Finder used in their csv files. Each column and row had a code which corresponded with the actual meaning for the column or row. The codes could only be found from a different source. The format for the codes also changed from year to year so we had to make the cleaner work for codes formatted in various different ways.
+    </p>
+</div>
+<div id="DatabaseDesign">
+    <h2>Database Design</h2>
+    <p>
+        We chose to use MongoDB because it tends to be more read optimized than SQL(our application is read heavy), we had very simple relations, and it integrated easily with our Javascript frontend and backend.
+    </p>
+
+    <h3>Our Schema:</h3>
+    <pre>
+state: {
+    name: String,
+    state_id: Number,
+    years: {
+        "2009": {
+            statistics_table: {...} // a mapping of each demographic to the percentage of people that fell under that demographic
+        },
+        "2010": {
+            statistics_table: {...}
+        },
+        ...,
+        "2016": {
+            statistics_table: {...}
+        },
+    },
+    counties: [
+        {
+            name: String,
+            county_id: Number,
+            years: {...} // same as state's \`years\` object
+        }
+    ]
+}
+    </pre>
+    <p>
+        In hindsight, embedding \`counties\` inside of \`state\` was a bad idea. It made the queries to access individual counties very complicated. If we could start over again, we would have made counties its own collection.
+    </p>
 </div>
 `;
 

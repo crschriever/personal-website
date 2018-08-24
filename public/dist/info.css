@@ -182,7 +182,8 @@ body {
     font-weight: 800; }
   .main-content h3 {
     font-weight: 800; }
-  .main-content p {
+  .main-content p,
+  .main-content ol {
     font-size: 1.5em; }
   .main-content .content-wrapper {
     padding: 10px;
@@ -191,6 +192,14 @@ body {
     height: 250px;
     width: auto;
     z-index: 1; }
+  .main-content .slider-img {
+    max-width: 80%;
+    height: auto; }
+  .main-content .filter-img {
+    max-width: 80%;
+    max-height: 400px;
+    width: auto;
+    height: auto; }
   .main-content .spacing {
     height: 175px; }
   @media screen and (min-width: 1024px) {

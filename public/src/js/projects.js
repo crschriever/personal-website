@@ -12,7 +12,8 @@ export let projectsArray = {
             </ul>
             </p>
             <p>Possession of data from different points in time also gave users the ability to visualize population changes over time.</p>
-			<div class="btn btn-default contact-button"><a class="contact-a" href="/info/PopulationVisualization" target="_blank"></a> Read More</div>
+            <div class="btn btn-default contact-button"><a class="contact-a" href="/info/PopulationVisualization" target="_blank"></a> Read More</div><br>
+            <div class="btn btn-default contact-button"><a class="contact-a" href="http://population.blackmarket.services" target="_blank"></a> Visit WebApp</div>
 		`
     },
     CI: {
