@@ -1,0 +1,17 @@
+<%
+let title = 'Population Visualization Tool';
+let sideBarItems = [];
+let content = `
+<div id="Inspiration">
+    <h2>Inspiration</h2>
+    <p>Help people learn Java</p>
+</div>
+`;
+
+let readMore = [
+    {text: "Nova: Java Learning Tool for students", href: "/info/Nova"},
+    {text: "Google Home Personal Project", href: "/info/GoogleHomeVisual"}
+];
+%>
+
+    <%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>

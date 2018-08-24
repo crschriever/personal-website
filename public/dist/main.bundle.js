@@ -12440,6 +12440,10 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var projectsArray = exports.projectsArray = {
+    PV: {
+        title: "Population Visualization",
+        description: "\n            <p>My team created a database for the purposes of tracking population growth in different states and counties in the United States, and an associated interface for visualizing this data in a compelling way. We took on this project to learn more about data cleaning and visualization techniques.</p>\n            <p>The population data could be broken down by factors such as:</p>\n            <ul>\n                <li>age</li>\n                <li>sex</li>\n                <li>race</li>\n                <li>movement status (moved from abroad, moved from different state, etc)</li>\n            </ul>\n            </p>\n            <p>Possession of data from different points in time also gave users the ability to visualize population changes over time.</p>\n\t\t\t<div class=\"btn btn-default contact-button\"><a class=\"contact-a\" href=\"/info/PopulationVisualization\" target=\"_blank\"></a> Read More</div>\n\t\t"
+    },
     CI: {
         title: "Cicerone",
         description: "\n\t\t\t<p>Created by a two man team at HackGT, Cicerone is an android app that tells you about interesting locations you pass by while exploring new locations. It will automatically detect points of interest and use text-to-speech to inform you, even when your phone is closed. Go into silent mode and receive push notifications instead of voice.</p>\n\t\t\t<p>Cicerone is built for Android using Java, Google Maps API, Wikipedia, and mobile text-to-speech.</p>\n\t\t\t<h5 class=\"bold\">GitHub client repo: </h5><div class=\"btn btn-warning contact-button\"><a class=\"contact-a\" href=\"https://github.com/crschriever/Cicerone\" target=\"_blank\"></a><i class=\"fa fa-github\"></i> GitHub</div>'\n\t\t\t<h5 class=\"bold\">Read more: </h5><div class=\"btn btn-default contact-button\"><a class=\"contact-a\" href=\"https://devpost.com/software/cicerone\" target=\"_blank\"></a> Devpost</div>\n\t\t"
@@ -12503,7 +12507,9 @@ var map = {
 	"./intelligence-threads.png": 22,
 	"./klaus.jpg": 23,
 	"./lambda-java-wizard-logo.png": 24,
-	"./laney-amazing-grace.jpg": 25
+	"./laney-amazing-grace.jpg": 25,
+	"./population-icon.jpg": 26,
+	"./population-slider.gif": 27
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -12628,6 +12634,18 @@ module.exports = __webpack_require__.p + "res/lambda-java-wizard-logo.png";
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "res/laney-amazing-grace.jpg";
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "res/population-icon.jpg";
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "res/population-slider.gif";
 
 /***/ })
 /******/ ]);

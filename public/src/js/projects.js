@@ -1,4 +1,20 @@
 export let projectsArray = {
+    PV: {
+        title: "Population Visualization",
+        description: `
+            <p>My team created a database for the purposes of tracking population growth in different states and counties in the United States, and an associated interface for visualizing this data in a compelling way. We took on this project to learn more about data cleaning and visualization techniques.</p>
+            <p>The population data could be broken down by factors such as:</p>
+            <ul>
+                <li>age</li>
+                <li>sex</li>
+                <li>race</li>
+                <li>movement status (moved from abroad, moved from different state, etc)</li>
+            </ul>
+            </p>
+            <p>Possession of data from different points in time also gave users the ability to visualize population changes over time.</p>
+			<div class="btn btn-default contact-button"><a class="contact-a" href="/info/PopulationVisualization" target="_blank"></a> Read More</div>
+		`
+    },
     CI: {
         title: "Cicerone",
         description: `
