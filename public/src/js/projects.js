@@ -1,4 +1,19 @@
 export let projectsArray = {
+    NO: {
+        title: "Nova",
+        description: `
+            <p>
+                I designed an online teaching platform for students to learn Java, currently hosted on Georgia Tech servers. The tool consists of challenges created for students to solve that follow along with an introductory course (CS 1331 Intro to Object Oriented Programming).
+            </p>
+            <p>
+                Student submitted code was run safely in a docker container and tested using the testing framework I created which tests solutions for accuracy and for good design.
+            </p>
+            <p>
+                I created this tool because I felt the course could be improved by giving students additional practice while providing immediate feedback. The tool also collects data that will be used in technology in education research.
+            </p>
+            <div class="btn btn-default contact-button"><a class="contact-a" href="/info/Nova" target="_blank"></a> Read More</div><br>
+		`
+    },
     PV: {
         title: "Population Visualization",
         description: `

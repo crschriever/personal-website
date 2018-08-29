@@ -12440,6 +12440,10 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 var projectsArray = exports.projectsArray = {
+    NO: {
+        title: "Nova",
+        description: "\n            <p>\n                I designed an online teaching platform for students to learn Java, currently hosted on Georgia Tech servers. The tool consists of challenges created for students to solve that follow along with an introductory course (CS 1331 Intro to Object Oriented Programming).\n            </p>\n            <p>\n                Student submitted code was run safely in a docker container and tested using the testing framework I created which tests solutions for accuracy and for good design.\n            </p>\n            <p>\n                I created this tool because I felt the course could be improved by giving students additional practice while providing immediate feedback. The tool also collects data that will be used in technology in education research.\n            </p>\n            <div class=\"btn btn-default contact-button\"><a class=\"contact-a\" href=\"/info/Nova\" target=\"_blank\"></a> Read More</div><br>\n\t\t"
+    },
     PV: {
         title: "Population Visualization",
         description: "\n            <p>My team created a database for the purposes of tracking population growth in different states and counties in the United States, and an associated interface for visualizing this data in a compelling way. We took on this project to learn more about data cleaning and visualization techniques.</p>\n            <p>The population data could be broken down by factors such as:</p>\n            <ul>\n                <li>age</li>\n                <li>sex</li>\n                <li>race</li>\n                <li>movement status (moved from abroad, moved from different state, etc)</li>\n            </ul>\n            </p>\n            <p>Possession of data from different points in time also gave users the ability to visualize population changes over time.</p>\n            <div class=\"btn btn-default contact-button\"><a class=\"contact-a\" href=\"/info/PopulationVisualization\" target=\"_blank\"></a> Read More</div><br>\n            <div class=\"btn btn-default contact-button\"><a class=\"contact-a\" href=\"http://population.blackmarket.services\" target=\"_blank\"></a> Visit WebApp</div>\n\t\t"
@@ -12508,9 +12512,10 @@ var map = {
 	"./klaus.jpg": 23,
 	"./lambda-java-wizard-logo.png": 24,
 	"./laney-amazing-grace.jpg": 25,
-	"./population-icon.jpg": 26,
-	"./population-moved-states.png": 27,
-	"./population-slider.gif": 28
+	"./nova.jpg": 26,
+	"./population-icon.jpg": 27,
+	"./population-moved-states.png": 28,
+	"./population-slider.gif": 29
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -12640,16 +12645,22 @@ module.exports = __webpack_require__.p + "res/laney-amazing-grace.jpg";
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "res/population-icon.jpg";
+module.exports = __webpack_require__.p + "res/nova.jpg";
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "res/population-moved-states.png";
+module.exports = __webpack_require__.p + "res/population-icon.jpg";
 
 /***/ }),
 /* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "res/population-moved-states.png";
+
+/***/ }),
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "res/population-slider.gif";
