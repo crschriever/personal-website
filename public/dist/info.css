@@ -200,6 +200,9 @@ body {
     max-height: 400px;
     width: auto;
     height: auto; }
+  .main-content .nova-img {
+    max-width: 80%;
+    height: auto; }
   .main-content .spacing {
     height: 175px; }
   @media screen and (min-width: 1024px) {

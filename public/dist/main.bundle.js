@@ -12512,10 +12512,11 @@ var map = {
 	"./klaus.jpg": 23,
 	"./lambda-java-wizard-logo.png": 24,
 	"./laney-amazing-grace.jpg": 25,
-	"./nova.jpg": 26,
-	"./population-icon.jpg": 27,
-	"./population-moved-states.png": 28,
-	"./population-slider.gif": 29
+	"./nova-editor.jpg": 26,
+	"./nova.jpg": 27,
+	"./population-icon.jpg": 28,
+	"./population-moved-states.png": 29,
+	"./population-slider.gif": 30
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -12645,22 +12646,28 @@ module.exports = __webpack_require__.p + "res/laney-amazing-grace.jpg";
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "res/nova.jpg";
+module.exports = __webpack_require__.p + "res/nova-editor.jpg";
 
 /***/ }),
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "res/population-icon.jpg";
+module.exports = __webpack_require__.p + "res/nova.jpg";
 
 /***/ }),
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__.p + "res/population-moved-states.png";
+module.exports = __webpack_require__.p + "res/population-icon.jpg";
 
 /***/ }),
 /* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "res/population-moved-states.png";
+
+/***/ }),
+/* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__.p + "res/population-slider.gif";

@@ -1,10 +1,58 @@
 <%
 let title = 'Nova';
-let sideBarItems = [];
+let sideBarItems = ['Inspiration', 'Features', 'Outcomes', 'Next Steps'];
 let content = `
 <div id="Inspiration">
     <h2>Inspiration</h2>
-    <p>Help people learn Java
+    <p>
+        I learned to program by diving in and writing code, not by taking tests and quizzes.
+        Homework is a good way of forcing students to write code but by the time most students
+        get responses to homework, they've forgotten what they were thinking while writing
+        the code or are too lazy to go back and check what they got points off for.
+    </p>
+    <p>
+        Students use nova to get additional practice by solving coding challenges that
+        correspond with the concepts they're learning in class. Nova provides instance
+        feedback on both correctness and style.
+    </p>
+</div>
+<div id="Features">
+    <h2>Features</h2>
+    <h3>Sleek Code Editing Experience</h3>
+    <img class="img-inline lazy-load nova-img" data-src="/res/nova-editor.jpg" alt="The multi-file in-browser editor of Nova">
+    <p>
+        The in-browser code editor that students use to write their solutions is made
+        using <a href="https://codemirror.net/">Code Mirror</a>. The code editor has
+        several nice features like syntax highlighting, undo/redo, code completion,
+        multiple cursors, and code folding. I also added multi-file editing capabilities
+        on top of the basic Code Mirror editor.
+    </p>
+    <p>
+        The student's solution is periodically saved to the browser's local storage.
+        Students have the option to restore the default code given at the beginning
+        of the challenge at any time.
+    </p>
+    <p>
+        The editor resizes as the student adds or deletes code.
+    </p>
+    <p>
+        Most of the html in Nova is rendered with server side templates but the
+        editor is made with React. I chose to build this way because server side
+        rendering tends to be quicker and most of the html is static after rendering.
+        The editor however is a piece of html that changes frequently (like when changing files).
+        These changes are handled with React.
+    </p>
+
+    <h3>Safe User Submitted Code Execution</h3>
+    <h3>Java Testing Framework</h3>
+    <h3>Admin Content Management System</h3>
+</div>
+<div id="Outcomes">
+    <h2>Outcomes</h2>
+</div>
+<div id="NextSteps">
+    <h2>Next Steps</h2>
+</div>
 `;
 
 let readMore = [
