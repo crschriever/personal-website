@@ -113,6 +113,12 @@ body {
     .nova-img {
         max-width: 80%;
         height: auto;
+
+        @media screen and (max-width: 767px) {
+            max-width: 96%;
+            width: 96%;
+            margin: 2%;
+        }
     }
 
     .spacing {

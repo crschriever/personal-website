@@ -203,6 +203,11 @@ body {
   .main-content .nova-img {
     max-width: 80%;
     height: auto; }
+    @media screen and (max-width: 767px) {
+      .main-content .nova-img {
+        max-width: 96%;
+        width: 96%;
+        margin: 2%; } }
   .main-content .spacing {
     height: 175px; }
   @media screen and (min-width: 1024px) {
