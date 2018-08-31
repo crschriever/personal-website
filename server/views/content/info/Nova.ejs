@@ -11,9 +11,10 @@ let content = `
         the code or are too lazy to go back and check what they got points off for.
     </p>
     <p>
-        Students use nova to get additional practice by solving coding challenges that
-        correspond with the concepts they're learning in class. Nova provides instance
-        feedback on both correctness and style.
+        Students use Nova to get additional practice by solving coding challenges that
+        correspond with the concepts they're learning in class. Challenges are separated
+        by category and difficulty which allows students to search for exactly what they need.
+        Nova provides instant feedback on both correctness and style.
     </p>
 </div>
 <div id="Features">
@@ -43,9 +44,42 @@ let content = `
         These changes are handled with React.
     </p>
 
-    <h3>Safe User Submitted Code Execution</h3>
+    <h3>Safe Student-Submitted Code Execution</h3>
+    <p>
+        Nova runs student-submitted code on the server which is an obvious vector of
+        attack that bad actors could exploit. To safeguard against malicious code, students'
+        solutions are ran and tested inside of a Docker container. Certain actions are
+        also prohibited using a java.security file.
+    </p>
+    <p>
+        I also plan on implementing a whitelist of which classes can be imported.
+    </p>
+
     <h3>Java Testing Framework</h3>
+    <p>
+        I decided to make my own testing framework rather than use an already existing library
+        like JUnit. I wanted to be able to create tests for challenges by writing an
+        approved solution and then giving input to test with. This way, at some point in
+        the future, Nova could allow students to test their solutions with custom input.
+        Also, I was able to make my testing framework more specific to Nova by including
+        specific domain language and having features that make writing tests for challenges
+        quicker.
+    </p>
+    <p>
+        The testing framework for Nova captures standard out by default and presents
+        it to the students so they can debug. It also handles non-compiling code,
+        misnamed classes and methods, infinite loops, and unexpected Runtime Exceptions.
+    </p>
+    <p>There are currently four types of testers supported by the framework</p>
+    <ol>
+        <li>Main method: <strong>input-</strong> Command line arguments, <strong>tests-</strong> Standard Out.</li>
+        <li>Method: <strong>input-</strong> Method arguments, <strong>tests-</strong> Return value.</li>
+        <li>Class: <strong>tests-</strong> The methods and fields of the class (Calls methods and looks at class side effects).</li>
+        <li>Group: allows the challenge to involve multiple, methods or classes. Made by composing method and class testers.</li>
+    </ol>
+
     <h3>Admin Content Management System</h3>
+    <h3>Georgia Tech CAS Sign In</h3>
 </div>
 <div id="Outcomes">
     <h2>Outcomes</h2>
