@@ -72,10 +72,10 @@ let content = `
     </p>
     <p>There are currently four types of testers supported by the framework</p>
     <ol>
-        <li>Main method: <strong>input-</strong> Command line arguments, <strong>tests-</strong> Standard Out.</li>
-        <li>Method: <strong>input-</strong> Method arguments, <strong>tests-</strong> Return value.</li>
-        <li>Class: <strong>tests-</strong> The methods and fields of the class (Calls methods and looks at class side effects).</li>
-        <li>Group: allows the challenge to involve multiple, methods or classes. Made by composing method and class testers.</li>
+        <li>Main method: Takes in command line arguments and tests standard out.</li>
+        <li>Method: Calls the method and tests the return value.</li>
+        <li>Class: Tests the methods and fields of the class by calling them and looking at side effects.</li>
+        <li>Group: Allows the challenge to involve multiple methods or classes by composing method and class testers.</li>
     </ol>
 
     <h3>Admin Content Management System</h3>
@@ -95,4 +95,4 @@ let readMore = [
 ];
 %>
 
-    <%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>
+<%- include('../../partials/info.ejs', {title, sideBarItems, content, readMore}); %>
