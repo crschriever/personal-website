@@ -64,7 +64,8 @@
 				<div class="col-xs-12 about-top-cont">
 					<h1 class="about-header text-center">About Me</h1>
 					<p class="about-body text-center lead">
-						I am a third-year student at Georgia Tech working on my Bachelors in CS with a focus on Computer Intelligence and Information
+						I am a third-year student at Georgia Tech working on my Bachelors in CS with a focus on Computer Intelligence and
+						Information
 						Networks. I have professional and personal experience as a
 						<strong>full stack</strong> web developer and as a
 						<strong>cross-platform</strong> mobile developer.
@@ -80,11 +81,13 @@
 				<div class="col-xs-12 about-sub">
 					<h2 class="about-sub-header">Passion</h2>
 					<p class="about-sub-body">
-						<strong>AI: </strong> Making behavior trees to create interesting video game enemies, visualizing and finding meaningful
+						<strong>AI: </strong> Making behavior trees to create interesting video game enemies, visualizing and finding
+						meaningful
 						trends in data, and following the latest developments in Machine learning.
 					</p>
 					<p class="about-sub-body">
-						<strong>Full Stack: </strong> Creating dynamic web-apps with pages that are responsive, designing scalable architectures,
+						<strong>Full Stack: </strong> Creating dynamic web-apps with pages that are responsive, designing scalable
+						architectures,
 						and planning/managing databases.
 					</p>
 				</div>
@@ -92,7 +95,8 @@
 					<h2 class="about-sub-header">Leadership</h2>
 					<ul class="about-sub-body">
 						<li>I am a
-							<a <% include ./partials/readme.ejs %> href="info/1331-ta" class="underline-link">Senior TA for CS 1331</a> at Georgia
+							<a <% include ./partials/readme.ejs %> href="info/1331-ta" class="underline-link">Senior TA for CS 1331</a> at
+							Georgia
 							Tech.
 						</li>
 						<li>I was lead designer and developer of several apps for the App Store.</li>
@@ -112,16 +116,20 @@
 						<p class="about-sub-body">
 							<ul class="about-sub-body">
 								<li>
-									I worked as a software engineering intern on an Agile team where I created features, fixed security bugs, performed code
+									I worked as a software engineering intern on an Agile team where I created features, fixed security bugs,
+									performed code
 									reviews, tested other developers' features, and participated in organization-wide testing blitzes.
 								</li>
 								<li>
-									I planned and wrote documentation on how to implement features for upcoming pilot in a way that protected users’ assets and
+									I planned and wrote documentation on how to implement features for upcoming pilot in a way that protected
+									users’ assets and
 									allowed participants to use the new features without disrupting their normal workflows.
 								</li>
 								<li>
-									I identified UI and security issues with primary email table: fixed db queries that caused filters on table to show incorrect
-									data, secured unprotected batch actions performed on table, and created unit testing framework that could be used
+									I identified UI and security issues with primary email table: fixed db queries that caused filters on table to
+									show incorrect
+									data, secured unprotected batch actions performed on table, and created unit testing framework that could be
+									used
 									for the batch actions on all tables.
 								</li>
 							</ul>
@@ -131,7 +139,8 @@
 						<strong>Languages: </strong> Java, JavaScript, PHP, Python, HTML/CSS, SASS, SQL, and Objective C.
 					</p>
 					<p class="about-sub-body ">
-						<strong>Tools: </strong> Git, Docker, Node.js, React, Webpack, Grunt, MongoDB, Bootstrap, JQuery, pandas, Selenium
+						<strong>Tools: </strong> Git, Docker, Node.js, React, Webpack, Grunt, MongoDB, Bootstrap, JQuery, pandas,
+						Selenium
 						WebDriver, JUnit, Xcode, and Android Studio.
 					</p>
 				</div>
@@ -169,15 +178,17 @@
 				<div class="row project-cont ">
 					<h2 class="underline bold ">College Personal Projects:</h2>
 					<div class="col-xs-10 ">
-						<p class="featured ">Featured Article:
+						<p class="featured ">
+							Featured Articles:
+							<a href="/info/Nova ">Nova</a>,
 							<a href="/info/GoogleHomeVisual ">Google Home Visual Response</a>
 						</p>
 					</div>
 					<%- include('./partials/template/project.ejs', {id: 'NO', imgSrc: '/res/nova.jpg', title: 'Nova', subtitle: 'Online learning tool'}); %>
-						<%- include('./partials/template/project.ejs', {id: 'GH', imgSrc: '/res/google-home.jpg', title: 'Google Home Visual Response', subtitle: 'Web app'}); %>
-							<%- include('./partials/template/project.ejs', {id: 'CI', imgSrc: '/res/Cicerone-icon.jpg', title: 'Cicerone', subtitle: 'Android app'}); %>
-								<%- include('./partials/template/project.ejs', {id: 'GK', imgSrc: '/res/GateKeeper.jpg', title: 'Gate Keeper', subtitle: 'Android app'}); %>
-									<%- include('./partials/template/project.ejs', {id: 'ER', imgSrc: '/res/Schedule.jpg', title: 'ER Schedule', subtitle: 'Web app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'GH', imgSrc: '/res/google-home.jpg', title: 'Google Home Visual Response', subtitle: 'Web app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'CI', imgSrc: '/res/Cicerone-icon.jpg', title: 'Cicerone', subtitle: 'Android app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'GK', imgSrc: '/res/GateKeeper.jpg', title: 'Gate Keeper', subtitle: 'Android app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'ER', imgSrc: '/res/Schedule.jpg', title: 'ER Schedule', subtitle: 'Web app'}); %>
 				</div>
 				<div class="row project-cont ">
 					<h2 class="underline bold ">Class Projects:</h2>
@@ -186,10 +197,10 @@
 				<div class="row project-cont ">
 					<h2 class="underline bold ">Highschool Personal Projects:</h2>
 					<%- include('./partials/template/project.ejs', {id: 'NEAT', imgSrc: '/res/NEAT.jpg', title: 'NEAT Algorithm', subtitle: 'Java library'}); %>
-						<%- include('./partials/template/project.ejs', {id: 'dSA', imgSrc: '/res/DSA.jpg', title: 'deSchApps', subtitle: 'Web app'}); %>
-							<%- include('./partials/template/project.ejs', {id: 'HH', imgSrc: '/res/HW.jpg', title: 'Homework Help', subtitle: 'iOS app'}); %>
-								<%- include('./partials/template/project.ejs', {id: 'IGW', imgSrc: '/res/IG.jpg', title: 'Intergalactic Warfare', subtitle: 'iOS app'}); %>
-									<%- include('./partials/template/project.ejs', {id: 'DS', imgSrc: '/res/Dar.jpg', title: 'Darlington School App', subtitle: 'PhoneGap app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'dSA', imgSrc: '/res/DSA.jpg', title: 'deSchApps', subtitle: 'Web app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'HH', imgSrc: '/res/HW.jpg', title: 'Homework Help', subtitle: 'iOS app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'IGW', imgSrc: '/res/IG.jpg', title: 'Intergalactic Warfare', subtitle: 'iOS app'}); %>
+					<%- include('./partials/template/project.ejs', {id: 'DS', imgSrc: '/res/Dar.jpg', title: 'Darlington School App', subtitle: 'PhoneGap app'}); %>
 				</div>
 			</div>
 			<!-- Modal -->
